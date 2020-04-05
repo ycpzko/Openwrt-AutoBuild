@@ -9,4 +9,6 @@
 default 默认配置 patches和custom.sh对所有配置生效  
 另外支持files 大法 放进 user/k2p/files即可 同理default里的对所有机型生效  
 
+**固件上传到分支和微信推送需要设置screts {SUPER_TOKEN} 和 {}**
+
 
