@@ -162,7 +162,7 @@ jobs:
     - name: Upload firmware to cowtransfer
       run: |
         curl -sL https://git.io/cowtransfer | sh
-        ./cowtransfer-uploader -s -p 8 ${FIRMWARE}
+        ./cowtransfer-uploader -s -p 64 ${FIRMWARE}
         
     - name: WeChat notification
       run: curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=${{matrix.target}}编译完成
