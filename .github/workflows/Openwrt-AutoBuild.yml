@@ -76,10 +76,10 @@ jobs:
 
          echo "Apply files..."
          if [ -n "$(ls -A "user/default/files" 2>/dev/null)" ]; then
-         cp -r -f user/default/files/ openwrt/package/base-files/files/
+         cp -r -f user/default/files/* openwrt/package/base-files/files/
          fi
          if [ -n "$(ls -A "user/${{matrix.target}}/files" 2>/dev/null)" ]; then
-         cp -r -f user/${{matrix.target}}/files/ openwrt/package/base-files/files/
+         cp -r -f user/${{matrix.target}}/files/* openwrt/package/base-files/files/
          fi
         
         echo "Apply custom.sh"
