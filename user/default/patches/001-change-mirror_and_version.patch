@@ -17,7 +17,7 @@
  
  sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release
 -echo "DISTRIB_REVISION='R20.3.19'" >> /etc/openwrt_release
-+echo "DISTRIB_REVISION='R20.4.1'" >> /etc/openwrt_release
++echo "DISTRIB_REVISION='R20.4.6'" >> /etc/openwrt_release
  sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release
  echo "DISTRIB_DESCRIPTION='OpenWrt '" >> /etc/openwrt_release
  
