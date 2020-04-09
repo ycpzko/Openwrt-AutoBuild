@@ -16,3 +16,7 @@ sed -i 's/openwrt.proxy.ustclug.org/op.hyird.xyz/g' package/lean/default-setting
 #去除密码
 sed  -i '/^sed.*shadow$/d'  package/lean/default-settings/files/zzz-default-settings
 
+#添加一些软件包
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/
+git clone https://github.com/destan19/OpenAppFilter package/
+git clone https://github.com/Mrbai98/luci-theme-atmaterial.git
