@@ -1,0 +1,4619 @@
+Package: acme
+Version: 2.8.3-2
+Depends: libc, gnu-wget, ca-bundle, openssl-util, socat
+License: GPL-3.0-only
+Section: net
+Architecture: all
+Installed-Size: 46037
+Filename: acme_2.8.3-2_all.ipk
+Size: 46940
+SHA256sum: 913b0297e339fb4528773df1a14b9f0fa0eb7968ec28e85c9b258cf63e92a085
+Description:  A client for issuing Letsencrypt certificates.
+
+Package: adblock
+Version: 3.5.5-2
+Depends: libc, jshn, jsonfilter
+License: GPL-3.0+
+Section: net
+Architecture: all
+Installed-Size: 10925
+Filename: adblock_3.5.5-2_all.ipk
+Size: 11858
+SHA256sum: c8e8a197d83dd3fb1605e613f38db1d0e154b503decc0823aed1fd956d1cf944
+Description:  Powerful adblock script to block ad/abuse domains via dnsmasq, unbound, named, kresd or dnscrypt-proxy.
+ The script supports many domain blacklist sites plus manual black- and whitelist overrides.
+ Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
+ 
+
+Package: alsa-lib
+Version: 1.1.6-1
+Depends: libc, kmod-sound-core, libpthread, librt
+License: LGPLv2.1 GPLv2
+Section: libs
+Architecture: x86_64
+Installed-Size: 344528
+Filename: alsa-lib_1.1.6-1_x86_64.ipk
+Size: 344085
+SHA256sum: ce0eb2fe3694164fdaec209ca8edf65ac07b1ce687b7f0d7d6c8fa1d267d4511
+Description:  This is the library package for alsa, needed by some userspace programs.
+ You must have enabled the ALSA support in the kernel.
+
+Package: alsa-utils
+Version: 1.1.6-2
+Depends: libc, alsa-lib, libncursesw6, libpthread
+Section: sound
+Architecture: x86_64
+Installed-Size: 127581
+Filename: alsa-utils_1.1.6-2_x86_64.ipk
+Size: 128198
+SHA256sum: 577c93ceb5d24979ceca0c4d4db77d43acb0a4d2cc5823bdf88b51aae683b0a5
+Description:  ALSA (Advanced Linux Sound Architecture) utilities
+
+Package: aria2
+Version: 1.35.0-1
+Depends: libc, zlib, libstdcpp, libopenssl1.1
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 642802
+Filename: aria2_1.35.0-1_x86_64.ipk
+Size: 643173
+SHA256sum: 03e88cb7f593c2dc97aa7591a9d52cb336ee721673d2dbd1fbdda55e94a36430
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: ariang
+Version: 2018-02-21-f71a67cb-1
+Depends: libc, uhttpd, aria2
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 968884
+Filename: ariang_2018-02-21-f71a67cb-1_all.ipk
+Size: 969175
+SHA256sum: 127028060e75b29ec42f7b484c643b3467bc9c7f0cd4173e6af969f3f4c140df
+Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
+
+Package: attendedsysupgrade-common
+Version: 0.1-2
+Depends: libc, rpcd, rpcd-mod-rpcsys
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 357
+Filename: attendedsysupgrade-common_0.1-2_x86_64.ipk
+Size: 1430
+SHA256sum: b00a48bcbe7707ce9986da2df2b835a87f48045d4d549b7342760baaedb5cdb6
+Description:  Common needed files for attendedsysupgrade tool
+ 
+ Manages dependencies and brings settings used by clients.
+ 
+ UCI options:
+ 
+ attendedsysupgrade.server.url
+ URL of compatible upgrade server [1]
+ 
+ attendedsysupgrade.client.upgrade_packages
+ Client should request image also if no new release but new packages upgrade are available.
+ 
+ attendedsysupgrade.client.advanced_mode
+ Offer advanced options like editing packages before request and show additional information.
+ 
+ attendedsysupgrade.client.auto_search
+ Tells the client to automattically search for upgrades
+ This can be done when opening luci or login in to console - depends on client.
+ 
+ [1]: https://github.com/aparcar/gsoc17-attended-sysupgrade
+
+Package: attr
+Version: 20170915-1
+Depends: libc, libattr
+License: LGPL-2.1 GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 11807
+Filename: attr_20170915-1_x86_64.ipk
+Size: 12549
+SHA256sum: aaff372c49f44db744d693d6308d4b4999da793ba2c742c56c0ff4fb86411d5b
+Description:  Extended attributes support
+ This package provides xattr manipulation utilities
+ - attr
+ - getfattr
+ - setfattr
+
+Package: avahi-dbus-daemon
+Version: 0.8-1
+Depends: libc, libavahi-dbus-support, libexpat, librt, libdaemon
+Provides: avahi-daemon
+License: LGPL-2.1-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 39050
+Filename: avahi-dbus-daemon_0.8-1_x86_64.ipk
+Size: 40246
+SHA256sum: c03598733c5c3163103111c3fb4c21d2eef76ed830f90acb9605c9b0a46545d4
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This package contains an mDNS/DNS-SD daemon.
+
+Package: bash
+Version: 4.4.18-2
+Depends: libc, libncurses6, libreadline8
+License: GPL-3.0+
+Section: utils
+Architecture: x86_64
+Installed-Size: 337999
+Filename: bash_4.4.18-2_x86_64.ipk
+Size: 338788
+SHA256sum: c874c52064b0f1a02a9c71e4f20f87f55dc6a48117a22dafedc6288e203306a7
+Description:  Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file. Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+
+Package: bc
+Version: 1.06.95-1
+Depends: libc, libreadline8, libncurses6
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 35710
+Filename: bc_1.06.95-1_x86_64.ipk
+Size: 36602
+SHA256sum: f52dec34322a4c51a341a6358f495bbf1a4b3c482a9add98454a830c6991813e
+Description:  bc is a language that supports arbitrary precision numbers with
+ interactive execution of statements.
+
+Package: bcp38
+Version: 5-4
+Depends: libc, ipset
+Section: net
+Architecture: x86_64
+Installed-Size: 2089
+Filename: bcp38_5-4_x86_64.ipk
+Size: 3042
+SHA256sum: e2ce58ee1d9ae74a306147441f7a566b0dce961feffa179540642759df57fb26
+Description:  bcp38 implements IETF BCP38 for home routers.
+ See https://tools.ietf.org/html/bcp38.
+ 
+ This package provides BCP38 for IPv4 only - IPv6 uses source 
+ specific default routes, so no firewall configuration is needed.
+
+Package: bind-client
+Version: 9.11.2-P1-1
+Depends: libc, bind-libs
+License: BSD-3-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 20181
+Filename: bind-client_9.11.2-P1-1_x86_64.ipk
+Size: 20894
+SHA256sum: d1ac65cbe94838af0f68fee83a843c32b72191850ad4ecb2ce7d9939c614fb6c
+Description:  bind dynamic DNS client
+
+Package: bind-libs
+Version: 9.11.2-P1-1
+Depends: libc, libopenssl1.1, zlib
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 1034861
+Filename: bind-libs_9.11.2-P1-1_x86_64.ipk
+Size: 1034415
+SHA256sum: b18f7fe67609a42b4cf760222dbcbeefa2ed2c79a664728abf07cd418fd1a671
+Description:  bind shared libraries
+
+Package: boost-chrono
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt, boost-system
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 12620
+Filename: boost-chrono_1.71.0-4_x86_64.ipk
+Size: 13392
+SHA256sum: 704f4384f1ccc98c480a76c7d3d0c6e94f6d8120f163b430fb8fe8ccda3c79e6
+Description:  This package contains the Boost chrono library.
+
+Package: boost-date_time
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 16515
+Filename: boost-date_time_1.71.0-4_x86_64.ipk
+Size: 17300
+SHA256sum: d5c0b294ca952a85a5f6b0e1fab6d815a97be51b1b0a3667abf1435eb03efa4f
+Description:  This package contains the Boost date_time library.
+
+Package: boost-program_options
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 105321
+Filename: boost-program_options_1.71.0-4_x86_64.ipk
+Size: 106069
+SHA256sum: 9dc029afe70df1aa9e6c320e67d5ebab0f6b60800f40f6cafb0f76ebcaed3974
+Description:  This package contains the Boost program_options library.
+
+Package: boost-random
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt, boost-system
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 11627
+Filename: boost-random_1.71.0-4_x86_64.ipk
+Size: 12422
+SHA256sum: 00b5949baacaf7fe278381e2dbef55557ae87b8c16e83648d5223abb91d5532d
+Description:  This package contains the Boost random library.
+
+Package: boost-system
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 1020
+Filename: boost-system_1.71.0-4_x86_64.ipk
+Size: 1797
+SHA256sum: e9c30391f43e7e0a54caf5c7365a5ea62b39cdeac9a026d27aee3f715c86398a
+Description:  This package contains the Boost system library.
+
+Package: boost
+Version: 1.71.0-4
+Depends: libc, libstdcpp, libpthread, librt
+License: BSL-1.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 105
+Filename: boost_1.71.0-4_x86_64.ipk
+Size: 1237
+SHA256sum: c7840d619b59fad7741525cae0e4f6c25b2861323f79ba1788725d9761b96850
+Description:  This package provides the Boost v1.71.0 libraries.
+ Boost is a set of free, peer-reviewed, portable C++ source libraries.
+ 
+ This package provides the following run-time libraries:
+ - atomic
+ - chrono
+ - container
+ - context
+ - contract
+ - coroutine and coroutine2 (Coroutine is deprecated - use Coroutine2)
+ - date_time
+ - exception
+ - filesystem
+ - fiber
+ - graph
+ - - graph-parallel
+ - iostreams
+ - locale (Requires kernel being compiled with full language support)
+ - log
+ - math
+ - program_options
+ - python
+ - python3
+ - random
+ - regex
+ - serialization and wserialization
+ - stackstrace
+ - system
+ - thread
+ - timer
+ - type_erasure
+ - wave
+ 
+ There are many more header-only libraries supported by Boost.
+ See more at http://www.boost.org/doc/libs/1_71_0/
+
+Package: btrfs-progs
+Version: 4.15.1-1
+Depends: libc, libattr, libuuid, zlib, libblkid, liblzo, libpthread
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 2148151
+Filename: btrfs-progs_4.15.1-1_x86_64.ipk
+Size: 2148996
+SHA256sum: 1af621b92b792b9c3af402004dd15ac007a695aaa545d08d2e821fb1d4de9b65
+Description:  Btrfs is a new copy on write filesystem for Linux aimed at implementing
+ advanced features while focusing on fault tolerance, repair and easy
+ administration. Initially developed by Oracle, Btrfs is licensed under the
+ GPL and open for contribution from anyone.
+
+Package: certtool
+Version: 3.5.19-1
+Depends: libc, libgnutls
+License: LGPLv2.1+
+Section: utils
+Architecture: x86_64
+Installed-Size: 125391
+Filename: certtool_3.5.19-1_x86_64.ipk
+Size: 126376
+SHA256sum: c506db1552753871e382c48cb93e53199b548b9ded22b4db170c4f65a22e64e8
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS certtool utility.
+
+Package: cgi-io
+Version: 5
+Depends: libc, libubox20170601, libubus20191227
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 6197
+Filename: cgi-io_5_x86_64.ipk
+Size: 6973
+SHA256sum: ac73b1fa2dec9340e6250dfc8fd49c2db4c3dac039249bf1133d6069e85429e5
+Description:  This package contains an cgi utility that is useful for up/downloading files
+
+Package: cgroupfs-mount
+Version: 1.4-1
+Depends: libc, mount-utils
+Section: utils
+Architecture: x86_64
+Installed-Size: 1112
+Filename: cgroupfs-mount_1.4-1_x86_64.ipk
+Size: 1896
+SHA256sum: 23901a4699ffd425dbf3effb525e0a20ac68fe915c6a3d3ce2bb9688a2186cc4
+Description:  Simple scripts to properly mount the cgroupfs hierarchy, especially structured for Debian packaging
+
+Package: clamav
+Version: 0.101.4-1
+Depends: libc, uclibcxx, libpthread, zlib, libcurl4, libjson-c, libmilter-sendmail, libopenssl1.1, libltdl, libpcre2, musl-fts
+License: GPL-2.0-only
+Section: net
+Architecture: x86_64
+Installed-Size: 1170343
+Filename: clamav_0.101.4-1_x86_64.ipk
+Size: 1167007
+SHA256sum: b9664d4a12805088cfdae01a208afe844ac46a7f722e4302f9b7b294bb2585aa
+Description:  ClamAV is an open source antivirus engine for detecting trojans,
+ viruses, malware & other malicious threats.
+
+Package: collectd-mod-cpu
+Version: 5.10.0-4
+Depends: libc, collectd
+Section: utils
+Architecture: x86_64
+Installed-Size: 4115
+Filename: collectd-mod-cpu_5.10.0-4_x86_64.ipk
+Size: 4836
+SHA256sum: 17a01a8b3a19a10e788f66034ab54d02503dfbe2dfeb2dcd977b84cefbdf0312
+Description:  CPU input plugin
+
+Package: collectd-mod-interface
+Version: 5.10.0-4
+Depends: libc, collectd
+Section: utils
+Architecture: x86_64
+Installed-Size: 3576
+Filename: collectd-mod-interface_5.10.0-4_x86_64.ipk
+Size: 4333
+SHA256sum: e81498b4094834426b76ade3b15c20fa782562cccb64f5836120315111dad7b0
+Description:  network interfaces input plugin
+
+Package: collectd-mod-iwinfo
+Version: 5.10.0-4
+Depends: libc, collectd, libiwinfo20200105
+Section: utils
+Architecture: x86_64
+Installed-Size: 3603
+Filename: collectd-mod-iwinfo_5.10.0-4_x86_64.ipk
+Size: 4374
+SHA256sum: 3653760999d8c476b51a27c654aa9ea891be83a5eee6d96679e1c281914993a5
+Description:  libiwinfo wireless statistics plugin
+
+Package: collectd-mod-load
+Version: 5.10.0-4
+Depends: libc, collectd
+Section: utils
+Architecture: x86_64
+Installed-Size: 1983
+Filename: collectd-mod-load_5.10.0-4_x86_64.ipk
+Size: 2726
+SHA256sum: 1336ab9b21b7fbc82e12a942b95b70caf524034408729f9a6c2bf48a7cace0dc
+Description:  system load input plugin
+
+Package: collectd-mod-memory
+Version: 5.10.0-4
+Depends: libc, collectd
+Section: utils
+Architecture: x86_64
+Installed-Size: 2666
+Filename: collectd-mod-memory_5.10.0-4_x86_64.ipk
+Size: 3431
+SHA256sum: c0336b63a1959a3b5974f71106a7b74fba4275f9122813579f5ea89475a50594
+Description:  physical memory usage input plugin
+
+Package: collectd-mod-network
+Version: 5.10.0-4
+Depends: libc, collectd
+Section: utils
+Architecture: x86_64
+Installed-Size: 14526
+Filename: collectd-mod-network_5.10.0-4_x86_64.ipk
+Size: 15225
+SHA256sum: cc8ce4ef01e08623e4a7afcc28f7aac7b4d3c70a056d4f3ee4f7616cc77c0525
+Description:  network input/output plugin
+
+Package: collectd-mod-rrdtool
+Version: 5.10.0-4
+Depends: libc, collectd, librrd1
+Section: utils
+Architecture: x86_64
+Installed-Size: 11082
+Filename: collectd-mod-rrdtool_5.10.0-4_x86_64.ipk
+Size: 11838
+SHA256sum: 44e85c4b776fe8d1d7dfff06ae0871a19f32388daa51c8c2bb973ed40cc03f98
+Description:  RRDtool output plugin
+
+Package: collectd
+Version: 5.10.0-4
+Depends: libc, libpthread, zlib, libltdl, libip4tc2, jshn
+Section: utils
+Architecture: x86_64
+Installed-Size: 90547
+Filename: collectd_5.10.0-4_x86_64.ipk
+Size: 91464
+SHA256sum: 9fd661373ee9646933b9fe8e105e0516207d988fd2d46271cac669032d3fd1f6
+Description:  collectd is a small daemon which collects system information periodically
+ and provides mechanismns to store the values in a variety of ways.
+
+Package: confuse
+Version: 3.2.1-1
+Depends: libc
+License: ISC
+Section: libs
+Architecture: x86_64
+Installed-Size: 19374
+Filename: confuse_3.2.1-1_x86_64.ipk
+Size: 20395
+SHA256sum: e6564bf6296e481ae64c3574f8d0a0c8fa4491fce8916004d2658ceaf037677f
+Description:  libConfuse is a configuration file parser library, licensed under the
+ terms of the ISC license, and written in C. It supports sections and
+ (lists of) values (strings, integers, floats, booleans or other
+ sections), as well as some other features (such as single/double-quoted
+ strings, environment variable expansion, functions and nested include
+ statements). It makes it very easy to add configuration file capability
+ to a program using a simple API.
+ 
+ The goal of libConfuse is not to be the configuration file parser
+ library with a gazillion of features. Instead, it aims to be easy to use
+ and quick to integrate with your code. libConfuse was called libcfg
+ before, but was changed to not confuse with other similar libraries.
+
+Package: containerd
+Version: 1.2.10-1
+Depends: libc, btrfs-progs, runc
+License: Apache-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 31028748
+Filename: containerd_1.2.10-1_x86_64.ipk
+Size: 30758995
+SHA256sum: 4ed83c6e7574105d837a16fb3f5930280524af9596460f9a8ac3f7c2a3e0855e
+Description:  An industry-standard container runtime with an emphasis on simplicity, robustness and portability
+
+Package: coreutils-base64
+Version: 8.23-3
+Depends: libc, coreutils
+Section: utils
+Architecture: x86_64
+Installed-Size: 23345
+Filename: coreutils-base64_8.23-3_x86_64.ipk
+Size: 24036
+SHA256sum: 0fa2bd32eb72ef1b2c92d7fa8cbd320328a2bc80c542dae08bb79dabbba34541
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils-nohup
+Version: 8.23-3
+Depends: libc, coreutils
+Section: utils
+Architecture: x86_64
+Installed-Size: 21653
+Filename: coreutils-nohup_8.23-3_x86_64.ipk
+Size: 22342
+SHA256sum: 450155156bac2af547fc32f4a0e059d9da4a41cc44746428ba0a9074c1c5db48
+Description:  Full version of standard GNU nohup utility.
+
+Package: coreutils
+Version: 8.23-3
+Depends: libc
+Section: utils
+Architecture: x86_64
+Installed-Size: 105
+Filename: coreutils_8.23-3_x86_64.ipk
+Size: 914
+SHA256sum: 3bdeca9b25be81bcf69eb7b05dbe9ae0bfe532530c0ff3467dcb09788fca72a5
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: cshark
+Version: 2018-08-20-7a7cf7f35074b85c6fb0c52067e640d2433ef73b-1
+Depends: libc, libjson-c, libpcap, libuci, libubox20170601, libuclient20160123, libustream-mbedtls20150806
+Section: net
+Architecture: x86_64
+Installed-Size: 8480
+Filename: cshark_2018-08-20-7a7cf7f35074b85c6fb0c52067e640d2433ef73b-1_x86_64.ipk
+Size: 9339
+SHA256sum: 1445f5e9162fb85ae57564bb9c5ef70a14315e263163934b4d13dc9db5918e89
+Description:  CloudShark capture tool
+
+Package: dbus
+Version: 1.10.4-1
+Depends: libc, libexpat, libdbus
+License: AFL-2.1
+Section: utils
+Architecture: x86_64
+Installed-Size: 100911
+Filename: dbus_1.10.4-1_x86_64.ipk
+Size: 101644
+SHA256sum: 346d6ee1b45c9571c3950e7595e4211c448329d320b90fc969aac6ffe1d2b9b1
+Description:  Simple interprocess messaging system (daemon)
+
+Package: ddns-scripts
+Version: 2.7.8-3
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14710
+Filename: ddns-scripts_2.7.8-3_all.ipk
+Size: 15776
+SHA256sum: 80233419cc3887f18e54578d140800faff3ad4eb7efa194c5e3bd53d1ab25425
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
+Package: ddns-scripts_cloudflare.com-v4
+Version: 2.7.8-3
+Depends: ddns-scripts, curl
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 2968
+Filename: ddns-scripts_cloudflare.com-v4_2.7.8-3_all.ipk
+Size: 4070
+SHA256sum: cc1e8b8f6610d87e972e3cc2d2702787b3db4f21f53954a8897f16be6a8f32a0
+Description:  Dynamic DNS Client scripts extension for CloudFlare.com API-v4 (require/install cURL)
+
+Package: ddns-scripts_freedns_42_pl
+Version: 2.7.8-3
+Depends: ddns-scripts, curl
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 1993
+Filename: ddns-scripts_freedns_42_pl_2.7.8-3_all.ipk
+Size: 3043
+SHA256sum: 8e05769167f6dbeda2f36e4a854696ce59d98d3bc41aa1f418fa170ef07e4fed
+Description:  Dynamic DNS Client scripts extension for freedns.42.pl
+
+Package: ddns-scripts_godaddy.com-v1
+Version: 2.7.8-3
+Depends: ddns-scripts, curl
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 2767
+Filename: ddns-scripts_godaddy.com-v1_2.7.8-3_all.ipk
+Size: 3859
+SHA256sum: a83e4e54bf597bc8720c1e7be75480c95e7577079db050ee6197631009e728f3
+Description:  Dynamic DNS Client scripts extension for GoDaddy.com (require/install cURL)
+
+Package: ddns-scripts_no-ip_com
+Version: 2.7.8-3
+Depends: ddns-scripts
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 1795
+Filename: ddns-scripts_no-ip_com_2.7.8-3_all.ipk
+Size: 2870
+SHA256sum: 91c8edf7d0f9bb26d936aebcdf50c83595e1a31b4e8b5eceeb8857029f3704bd
+Description:  Dynamic DNS Client scripts extension for No-IP.com
+
+Package: ddns-scripts_nsupdate
+Version: 2.7.8-3
+Depends: ddns-scripts, bind-client
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 1796
+Filename: ddns-scripts_nsupdate_2.7.8-3_all.ipk
+Size: 2894
+SHA256sum: 5a481efbeb382c197eeb9b1737a9b72a16de928b7566134a80be3fb3a3233d5b
+Description:  Dynamic DNS Client scripts extension for direct updates using Bind nsupdate
+
+Package: ddns-scripts_route53-v1
+Version: 2.7.8-3
+Depends: ddns-scripts, curl, openssl-util
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 2630
+Filename: ddns-scripts_route53-v1_2.7.8-3_all.ipk
+Size: 3855
+SHA256sum: 1a15d072bbf040ae1c23477cc2780751a54cd786d6e5ba50e0ed44f8ab447ae0
+Description:  Dynamic DNS Client scripts extension for Amazon AWS Route53. Note: You
+ must also install ca-certificate or ca-bundle.
+ It requires:
+ "option username" to be a valid AWS access key id
+ "option password" to be the matching AWS secret key id
+ "option domain" to contain the hosted zone ID
+
+Package: dkjson
+Version: 2.5-3
+Depends: libc, lua
+License: MIT
+Section: lang
+Architecture: x86_64
+Installed-Size: 6688
+Filename: dkjson_2.5-3_x86_64.ipk
+Size: 7469
+SHA256sum: 793513e1aef1c72d41cf02c030a34e66eb23925cb91a202c90a2d26fe9ce1b51
+Description:  Lua JSON parser/serializer with UTF-8 support
+
+Package: dnscrypt-proxy-resolvers
+Version: 1.9.5+git-20171001-2d43be3-8
+Depends: libc
+License: ISC
+Section: net
+Architecture: x86_64
+Installed-Size: 7504
+Filename: dnscrypt-proxy-resolvers_1.9.5+git-20171001-2d43be3-8_x86_64.ipk
+Size: 8288
+SHA256sum: e435022c6ab0451395ac81c728038dfe1114f021c32a4d39d5e5de8be2f1a1cb
+Description:  Package with current list of dnscrypt-proxy resolvers.
+
+Package: dnscrypt-proxy
+Version: 1.9.5-8
+Depends: libc, libsodium, dnscrypt-proxy-resolvers
+License: ISC
+Section: net
+Architecture: x86_64
+Installed-Size: 70563
+Filename: dnscrypt-proxy_1.9.5-8_x86_64.ipk
+Size: 71639
+SHA256sum: ae448239d9ef2bc7704cb037ea1030c4bf32661ff6351384b727d5d98626e279
+Description:  dnscrypt-proxy provides local service which can be used directly as your
+ local resolver or as a DNS forwarder, encrypting and authenticating requests
+ using the DNSCrypt protocol and passing them to an upstream server.
+ The DNSCrypt protocol uses high-speed high-security elliptic-curve cryptography
+ and is very similar to DNSCurve, but focuses on securing communications between
+ a client and its first-level resolver.
+
+Package: docker-ce
+Version: 19.03.3-2
+Depends: libc, btrfs-progs, ca-certificates, cgroupfs-mount, containerd, libdevmapper, libnetwork, tini, iptables-mod-extra, kmod-br-netfilter, kmod-ikconfig, kmod-nf-conntrack-netlink, kmod-nf-ipvs, kmod-veth
+License: Apache-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 32258491
+Filename: docker-ce_19.03.3-2_x86_64.ipk
+Size: 32167252
+SHA256sum: 8dda5cb4440e0fbde4b91e1a62615ff41849c6521f6cf629647830a652ac64c6
+Description:  Docker Engine is used by millions enables containerized applications
+ to run anywhere consistently on any infrastructure.
+
+Package: dump1090
+Version: 2017-06-01-1
+Depends: libc, libpthread, librtlsdr, uhttpd
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 711048
+Filename: dump1090_2017-06-01-1_x86_64.ipk
+Size: 704889
+SHA256sum: 246839eee3c77835a536f9d95ec849dc427657cbcd88f7fddc86f848af6fc0e1
+Description:  Dump1090 is a Mode S decoder specifically designed for RTLSDR devices.
+
+Package: dynapoint
+Version: 2
+Depends: libc, lua, libubus-lua, libuci-lua, libubox-lua, luci-lib-nixio
+License: GPL-3.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2464
+Filename: dynapoint_2_x86_64.ipk
+Size: 3305
+SHA256sum: 8f5130acb3ccdb7d95a065c7e879f51559adfd1c3ed381bed43e6b9ec2eb898c
+Description:  Dynapoint uses LUA scripts to allow dynamic access point creation
+ and deletion depending on changes of certain network conditions.
+
+Package: e2guardian
+Version: 3.2.0-1
+Depends: libc, libpthread, uclibcxx, zlib, libpcre
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 323195
+Filename: e2guardian_3.2.0-1_x86_64.ipk
+Size: 323851
+SHA256sum: b2fab801f9a51e81aedd41c4747f4bcbff3f4dff99521aa95a9b1da2b11866bd
+Description:  E2Guardian
+
+Package: etherwake
+Version: 1.09-4
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 4959
+Filename: etherwake_1.09-4_x86_64.ipk
+Size: 5847
+SHA256sum: 99a1ad6c188ae40afb10fe0e813126fa979a4dedd7b273695bf35cf558e94c65
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: fdk-aac
+Version: 0.1.6-1
+Depends: libc
+License: Fraunhofer-FDK-AAC-for-Android
+Section: sound
+Architecture: x86_64
+Installed-Size: 310051
+Filename: fdk-aac_0.1.6-1_x86_64.ipk
+Size: 310911
+SHA256sum: fd321c30f39824890e354a1d3c8f059269c06bdd3caa9ba6d6d7018efbaba96e
+Description:  Port of the Fraunhofer FDK AAC Codec Library for Android
+
+Package: forked-daapd
+Version: 27.1-6
+Depends: libc, libgpg-error, libgcrypt, libgdbm, zlib, libexpat, libunistring, libevent2-7, libdaemon, libantlr3c, confuse, libopus, alsa-lib, libffmpeg-full, mxml, libavahi-client, sqlite3-cli, libplist, libcurl4, libjson-c, libprotobuf-c, libgnutls, libsodium, libwebsockets
+License: GPL-2.0
+Section: sound
+Architecture: x86_64
+Installed-Size: 3760338
+Filename: forked-daapd_27.1-6_x86_64.ipk
+Size: 3759598
+SHA256sum: d934b8ea4dfd968f35f39893513dd8a3745b429d6ccb7d4a803ffc7264fe6e92
+Description:  forked-daapd is a Linux/FreeBSD DAAP (iTunes), MPD (Music Player Daemon) and
+ RSP (Roku) media server. It has support for AirPlay speakers, Chromecast,
+ Apple Remote (and compatibles), MPD clients, internet radio and LastFM. It
+ does not support AirPlay/Chromecast video.
+
+Package: fwknop
+Version: 2.6.9-4
+Depends: libc, libfko
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 30753
+Filename: fwknop_2.6.9-4_x86_64.ipk
+Size: 31823
+SHA256sum: 49e801c9984a19a82162dd70658c96bfe3a2b4c1c57fbb0485c53f4feac0118c
+Description:  Fwknop implements an authorization scheme known as Single Packet Authorization
+ (SPA) for Linux systems running iptables.  This mechanism requires only a
+ single encrypted and non-replayed packet to communicate various pieces of
+ information including desired access through an iptables policy. The main
+ application of this program is to use iptables in a default-drop stance to
+ protect services such as SSH with an additional layer of security in order to
+ make the exploitation of vulnerabilities (both 0-day and unpatched code) much
+ more difficult.
+ This package contains the fwknop client.
+
+Package: fwknopd
+Version: 2.6.9-4
+Depends: libc, iptables, libfko, libpcap
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 59170
+Filename: fwknopd_2.6.9-4_x86_64.ipk
+Size: 60385
+SHA256sum: fd210414c57d7c2c46ef3194be08f3eb7724e544b07f7d494e61b2f08f1af85b
+Description:  Fwknop implements an authorization scheme known as Single Packet Authorization
+ (SPA) for Linux systems running iptables.  This mechanism requires only a
+ single encrypted and non-replayed packet to communicate various pieces of
+ information including desired access through an iptables policy. The main
+ application of this program is to use iptables in a default-drop stance to
+ protect services such as SSH with an additional layer of security in order to
+ make the exploitation of vulnerabilities (both 0-day and unpatched code) much
+ more difficult.
+ This package contains the fwknop daemon.
+
+Package: gzip
+Version: 1.7-1
+Depends: libc
+License: GPL-3.0+
+Section: utils
+Architecture: x86_64
+Installed-Size: 47772
+Filename: gzip_1.7-1_x86_64.ipk
+Size: 48790
+SHA256sum: 882da56e37646bc6c31905a0ac399951a81c9fa93d7c43cd2dd61f0bac8461ee
+Description:  gzip (GNU zip) is a compression utility designed to be a replacement for compress.
+
+Package: haproxy
+Version: 1.8.4-01
+Depends: libc, libpcre, libltdl, zlib, libpthread, libopenssl1.1, libncursesw6, libreadline8, libatomic
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 755232
+Filename: haproxy_1.8.4-01_x86_64.ipk
+Size: 754938
+SHA256sum: ddd9ba966b0f3e5def23d9e9296ed3fe558555c3a4fe46b5d3bb104e63e376d2
+Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
+ This package is built with SSL and LUA support.
+
+Package: hd-idle
+Version: 1.05-1
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 4560
+Filename: hd-idle_1.05-1_x86_64.ipk
+Size: 5369
+SHA256sum: 8a3c4b61db3c2307b52d12552b370b303a756fb6b977a611f29f25b5bc642f0f
+Description:  hd-idle is a utility program for spinning-down external disks after a period of idle time.
+
+Package: htop
+Version: 2.2.0-1
+Depends: libc, libncurses6
+License: GPL-2.0
+Section: admin
+Architecture: x86_64
+Installed-Size: 63105
+Filename: htop_2.2.0-1_x86_64.ipk
+Size: 64013
+SHA256sum: 011172a5a9b77d39959a83629b885e397b1f34e941a973c2365a493545bf60f2
+Description:  Htop is an ncursed-based process viewer similar to top, but
+ it allows to scroll the list vertically and horizontally to
+ see all processes and their full command lines.
+
+Package: icu
+Version: 65.1-2
+Depends: libc, libstdcpp, libpthread
+License: ICU
+Section: libs
+Architecture: x86_64
+Installed-Size: 1834414
+Filename: icu_65.1-2_x86_64.ipk
+Size: 1828220
+SHA256sum: f6e71f40f57a3f2155fae943d8b30693ff04724ba484f31728d3220bf3222a04
+Description:  ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU is widely portable and gives applications the same results on all platforms and between C/C++ and Java software.
+ This package supports C/C++.
+
+Package: iptables-mod-account
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-account
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2055
+Filename: iptables-mod-account_2.14-6_x86_64.ipk
+Size: 2783
+SHA256sum: 389be0c0a94d2495b92b3e306ffa75971e6765fda816a25a2f0a2a20cf2230ff
+Description:  ACCOUNT iptables extension
+
+Package: iptables-mod-chaos
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-chaos
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1499
+Filename: iptables-mod-chaos_2.14-6_x86_64.ipk
+Size: 2245
+SHA256sum: 332961cab78c986cfb5fb436eaa5f06c905469714606dc482bfa21d2537a19c0
+Description:  CHAOS iptables extension
+
+Package: iptables-mod-condition
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-condition
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1639
+Filename: iptables-mod-condition_2.14-6_x86_64.ipk
+Size: 2368
+SHA256sum: 536d007ff9e261afb07aa643fe336c54ab007e4a440f696a4d5fb2a72e78a261
+Description:  Condition iptables extension
+
+Package: iptables-mod-delude
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-delude
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1134
+Filename: iptables-mod-delude_2.14-6_x86_64.ipk
+Size: 1876
+SHA256sum: 3db3cbe2eb6a4e7535d11cda9fe54c609cbf381ec523c87e46de4d40e6f85718
+Description:  DELUDE iptables extension
+
+Package: iptables-mod-dhcpmac
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-dhcpmac
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1887
+Filename: iptables-mod-dhcpmac_2.14-6_x86_64.ipk
+Size: 2622
+SHA256sum: 73cb15ff92b785c0608dea14d724afc167cd98640107bd68b48f508803571a92
+Description:  DHCPMAC iptables extension
+
+Package: iptables-mod-dnetmap
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-dnetmap
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2702
+Filename: iptables-mod-dnetmap_2.14-6_x86_64.ipk
+Size: 3441
+SHA256sum: 27a5c2cac477f6430a2cb9a0ebb2bc628428ee20de35bd114a412db1012c2d7d
+Description:  DNETMAP iptables extension
+
+Package: iptables-mod-fuzzy
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-fuzzy
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1728
+Filename: iptables-mod-fuzzy_2.14-6_x86_64.ipk
+Size: 2455
+SHA256sum: 2f04b2b6770994df6ae9fe821dcbd008b12b0c32c6293a0957aeab46b622af1e
+Description:  fuzzy iptables extension
+
+Package: iptables-mod-geoip
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-geoip
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 3164
+Filename: iptables-mod-geoip_2.14-6_x86_64.ipk
+Size: 3907
+SHA256sum: 080bbaca0c6c0c03991c90470ccb033dd852ce7e056ed03b9a584706d31e8bd8
+Description:  geoip iptables extension
+
+Package: iptables-mod-iface
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-iface
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2729
+Filename: iptables-mod-iface_2.14-6_x86_64.ipk
+Size: 3461
+SHA256sum: 0d4cca3342ed2b84d28f7b7159660e2bfbff1b5e600c1b37aa41245b1cd33d85
+Description:  iface iptables extension
+
+Package: iptables-mod-ipmark
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-ipmark
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2203
+Filename: iptables-mod-ipmark_2.14-6_x86_64.ipk
+Size: 2932
+SHA256sum: b0dc305605569dbf38aa80b58eb4b371cda435f40a6264f873b03c3c5a055412
+Description:  IPMARK iptables extension
+
+Package: iptables-mod-ipp2p
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-ipp2p
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2772
+Filename: iptables-mod-ipp2p_2.14-6_x86_64.ipk
+Size: 3516
+SHA256sum: 84f0956d76eae187ff480c3652e951a0cbd0ed541be3caa6a31fbecf2b63079e
+Description:  IPP2P iptables extension
+
+Package: iptables-mod-ipv4options
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-ipv4options
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2198
+Filename: iptables-mod-ipv4options_2.14-6_x86_64.ipk
+Size: 2925
+SHA256sum: cc596d84f761ff05ffb55d2586d6b2d68d13e9089b58eb82abe14058889314e9
+Description:  ipv4options iptables extension
+
+Package: iptables-mod-length2
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-length2
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2254
+Filename: iptables-mod-length2_2.14-6_x86_64.ipk
+Size: 2983
+SHA256sum: 5b70f644a6e3cf4d549b81ae4c4e411ab5a8f9fd7c7285145a2bd48fe2e0d34a
+Description:  length2 iptables extension
+
+Package: iptables-mod-logmark
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-logmark
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1919
+Filename: iptables-mod-logmark_2.14-6_x86_64.ipk
+Size: 2652
+SHA256sum: c0fd976104a89211116b9bcf50a9c081bab77cf568b1d7808383853b88be0d90
+Description:  LOGMARK iptables extension
+
+Package: iptables-mod-lscan
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-lscan
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1573
+Filename: iptables-mod-lscan_2.14-6_x86_64.ipk
+Size: 2315
+SHA256sum: 0ac19ccdfa370385c247215f5245ad86fac8efc774a10439353499c143cb484b
+Description:  lscan iptables extension
+
+Package: iptables-mod-lua
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-lua
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2451
+Filename: iptables-mod-lua_2.14-6_x86_64.ipk
+Size: 3187
+SHA256sum: 4833ee21f73740a8895d524453da897c8e637f632f9b074a6d38ba12f5c9168c
+Description:  Lua PacketScript iptables extension
+
+Package: iptables-mod-psd
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-psd
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1964
+Filename: iptables-mod-psd_2.14-6_x86_64.ipk
+Size: 2686
+SHA256sum: 93d2b0dd4cb409630db9b135c6a6b117459a1e4a26e8c3a9bd72391581836738
+Description:  psd iptables extension
+
+Package: iptables-mod-quota2
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-quota2
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 2044
+Filename: iptables-mod-quota2_2.14-6_x86_64.ipk
+Size: 2770
+SHA256sum: 817bd5e62356d208ccc761a2e4204968065ad0724fa5d1efe34f5f9c106d14be
+Description:  quota2 iptables extension
+
+Package: iptables-mod-sysrq
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-sysrq
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1133
+Filename: iptables-mod-sysrq_2.14-6_x86_64.ipk
+Size: 1879
+SHA256sum: a90cb6373991ad4a11afcb6dd5d7a1b5f1449a84297f8008ab4585f64d5a8b35
+Description:  SYSRQ iptables extension
+
+Package: iptables-mod-tarpit
+Version: 2.14-6
+Depends: libc, iptables, kmod-ipt-tarpit
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1563
+Filename: iptables-mod-tarpit_2.14-6_x86_64.ipk
+Size: 2309
+SHA256sum: 0f79ef29d2b87fc8d519c9f6cba523ddb65c100dc97eebf34e458e607a788380
+Description:  TARPIT iptables extension
+
+Package: iptaccount
+Version: 2.14-6
+Depends: libc, iptables, iptables-mod-account
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 4608
+Filename: iptaccount_2.14-6_x86_64.ipk
+Size: 5325
+SHA256sum: ae6c6e202571e24e2c09d5c731089f7f7b6d3d659d716bfbd0331b999ba0f198
+Description:  iptables-mod-account control utility
+
+Package: iptgeoip
+Version: 2.14-6
+Depends: libc, iptables, iptables-mod-geoip, perl, perlbase-getopt, perlbase-io, perl-text-csv_xs, wget, gzip, unzip
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 1465
+Filename: iptgeoip_2.14-6_x86_64.ipk
+Size: 2267
+SHA256sum: 0c42855e38300be4a88fb6a54ed8e49b3aa2553bef3bf6983f5a91514d480b55
+Description:  iptables-mod-geoip support scripts for MaxMind GeoIP databases
+
+Package: iptraf-ng
+Version: 1.1.4-1
+Depends: libc, libncurses6
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 72233
+Filename: iptraf-ng_1.1.4-1_x86_64.ipk
+Size: 73275
+SHA256sum: d7ee98bbdd277cc0c08e7334f3c48e299fc24d4bbeb1fb6acb1da756776873d8
+Description:  iptraf-ng is a console-based network statistics utility for Linux. It gathers a
+ variety of figures such as TCP connection packet and byte counts, interface
+ statistics and activity indicators, TCP/UDP traffic breakdowns, and LAN
+ station packet and byte counts.
+
+Package: jansson
+Version: 2.10-1
+Depends: libc
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 20772
+Filename: jansson_2.10-1_x86_64.ipk
+Size: 21518
+SHA256sum: cd2238ac6ab0d27d569df804b1cfe44a50c235eae17431dc66d33dfefd1be433
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
+
+Package: knot-dig
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), libc, libatomic, libedit, knot-libs
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 32069
+Filename: knot-dig_2.6.6-1_x86_64.ipk
+Size: 32869
+SHA256sum: 3a20d437ae52b659665f64c22a48763fb30b8a7ba39242b1c0587faddc1dc5ff
+Description:  Knot DNS advanced DNS lookup utility.
+
+Package: knot-host
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), libc, libatomic, libedit, knot-libs
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 33449
+Filename: knot-host_2.6.6-1_x86_64.ipk
+Size: 34247
+SHA256sum: dbf363fc62985a7a9f1f154afeaa5b66c04cb32c29999da7cb61ccd70a2013e7
+Description:  Knot DNS simple DNS lookup utility.
+
+Package: knot-keymgr
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), knot-libzscanner (=2.6.6-1), libc, libatomic, libedit, liburcu, knot-libs, knot-libzscanner
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 81423
+Filename: knot-keymgr_2.6.6-1_x86_64.ipk
+Size: 82268
+SHA256sum: 825de476f3e54ffdd3fa8791dd63c1924401fb1348df15765b1d12d22def3a79
+Description:  Knot DNS DNSSEC key management utility.
+
+Package: knot-libs
+Version: 2.6.6-1
+Depends: libc, libpthread, libgnutls
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: libs
+Architecture: x86_64
+Installed-Size: 128238
+Filename: knot-libs_2.6.6-1_x86_64.ipk
+Size: 128989
+SHA256sum: fcb99ced4e7caf55b3b7b7ac0274c912f02013acda9ce04dad3cae6ce596e399
+Description:  Knot DNS common DNS and DNSSEC libraries.
+
+Package: knot-libzscanner
+Version: 2.6.6-1
+Depends: libc, libpthread
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: libs
+Architecture: x86_64
+Installed-Size: 43164
+Filename: knot-libzscanner_2.6.6-1_x86_64.ipk
+Size: 43942
+SHA256sum: cda3eadb50e73e0ed5bd1d5287cb9c184c3499f1381a1e8cce4d5412bcb75973
+Description:  Knot DNS zone parser library.
+
+Package: knot-nsupdate
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), knot-libzscanner (=2.6.6-1), libc, libatomic, libedit, knot-libs, knot-libzscanner
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 27326
+Filename: knot-nsupdate_2.6.6-1_x86_64.ipk
+Size: 28150
+SHA256sum: b34936f7f9842ef0b6bf0a951cd537b880cbc2c310668082110cd4874391f50a
+Description:  Knot DNS dynamic DNS update utility.
+
+Package: knot-tests
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), knot-libzscanner (=2.6.6-1), libc, libatomic, libedit, liburcu, knot-libs, knot-libzscanner
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 2116158
+Filename: knot-tests_2.6.6-1_x86_64.ipk
+Size: 2111686
+SHA256sum: 44f23b79efb7772310c3a7e0e2cbfd1faf8a1071cef2b9ca3b10593218ab3f86
+Description:  Unit tests for the Knot DNS server and libraries.
+ Usage: /usr/share/knot/runtests.sh
+
+Package: knot-zonecheck
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), knot-libzscanner (=2.6.6-1), libc, libatomic, libedit, liburcu, knot-libs, knot-libzscanner
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 160063
+Filename: knot-zonecheck_2.6.6-1_x86_64.ipk
+Size: 160887
+SHA256sum: 24a00ec64f71955573fb54a0d34fa1192f5248b9636ea839802ebae2f7c8f509
+Description:  Knot DNS zonefile check utility.
+
+Package: knot
+Version: 2.6.6-1
+Depends: knot-libs (=2.6.6-1), knot-libzscanner (=2.6.6-1), libc, libatomic, libedit, liburcu, knot-libs, knot-libzscanner
+License: GPL-3.0 LGPL-2.0 0BSD MIT OLDAP-2.8
+Section: net
+Architecture: x86_64
+Installed-Size: 381733
+Filename: knot_2.6.6-1_x86_64.ipk
+Size: 382418
+SHA256sum: 9ec0942a93f1863a5fa6c598cb3666e8fb7af1f9ff58693fd0048fc594be7904
+Description:  High-performance authoritative-only DNS server.
+
+Package: lame-lib
+Version: 3.100-1
+Depends: libc
+License: LGPL-2.0
+Section: sound
+Architecture: x86_64
+Installed-Size: 123095
+Filename: lame-lib_3.100-1_x86_64.ipk
+Size: 123910
+SHA256sum: 22068bf456546082b4a588e264d619ce6f8d3ba52f10b0fb032e09a9fe1d0f87
+Description:  lame mp3 encoder libs
+
+Package: libalac
+Version: 0.0.7-3
+Depends: libc, libstdcpp
+License: APSL-2.0 Apache-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 17885
+Filename: libalac_0.0.7-3_x86_64.ipk
+Size: 18805
+SHA256sum: 053dabc3a0f311263bf7d983ad0f11ef9dad6048dc4e310c857be55ebb75506b
+Description:  The Apple Lossless Audio Codec (ALAC) is an audio codec developed by Apple and supported on iPhone, iPad, most iPods, Mac and iTunes.
+ ALAC is a data compression method which reduces the size of audio files with no loss of information.
+ A decoded ALAC stream is bit-for-bit identical to the original uncompressed audio file.
+
+Package: libantlr3c
+Version: 3.2-1
+Depends: libc
+License: BSD-2-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 40430
+Filename: libantlr3c_3.2-1_x86_64.ipk
+Size: 41334
+SHA256sum: d578d2942f7a9f953d8707f51397d142064ff1bb4482c5e672fdb55e31e26418
+Description:  ANother Tool for Language Recognition, is a language tool that provides a framework for constructing recognizers,
+ interpreters, compilers, and translators from grammatical descriptions containing actions in a variety of target languages.
+
+Package: libao
+Version: 1.2.0-1
+Depends: libc, alsa-lib
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 21770
+Filename: libao_1.2.0-1_x86_64.ipk
+Size: 22486
+SHA256sum: 1c83290488a0b491820561be25365cf05c5ea8404846cf56effb6e9cd4176e09
+Description:  Libao is a cross-platform audio library that allows programs to
+ output audio using a simple API on a wide variety of platforms.
+
+Package: libattr
+Version: 20170915-1
+Depends: libc
+License: LGPL-2.1 GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 6329
+Filename: libattr_20170915-1_x86_64.ipk
+Size: 7123
+SHA256sum: b51023e5033f1b3e80843a7719a0633a74023b3014ca1cbcf8715eb487f3bc07
+Description:  Extended attributes support
+ This package provides libattr
+
+Package: libavahi-client
+Version: 0.8-1
+Depends: libc, avahi-dbus-daemon
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 18732
+Filename: libavahi-client_0.8-1_x86_64.ipk
+Size: 19879
+SHA256sum: 991d3dcbf6813434e67ff801882be6b5d15ae412913d8352e78b0a0edd8f1c7d
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-client library.
+ It also automatically adds the required
+ libavahi-dbus-support and the avahi-dbus-daemon packages.
+ For more information please see the avahi documentation.
+
+Package: libavahi-compat-libdnssd
+Version: 0.8-1
+Depends: libc, libavahi-client
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 10841
+Filename: libavahi-compat-libdnssd_0.8-1_x86_64.ipk
+Size: 11950
+SHA256sum: 0b5bbc8ee3e94dc7b45076b56a67749b4c7677705c784e04311b9e36c6616841
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-compat-libdnssd library.
+ It also automatically adds the required libavahi-client package.
+ For more information please see the avahi documentation.
+
+Package: libavahi-dbus-support
+Version: 0.8-1
+Depends: libc, dbus
+Provides: libavahi
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 78231
+Filename: libavahi-dbus-support_0.8-1_x86_64.ipk
+Size: 79558
+SHA256sum: a149c66632bcecd9a49b9fce21de6cae1476a33490221821f4cdcfc73aea9298
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ The libavahi package contains the mDNS/DNS-SD shared libraries,
+ used by other programs. Specifically, it provides
+ libavahi-core and libavahi-common libraries.
+ .
+ The libavahi-dbus-support package enables
+ D-Bus support in avahi, needed to support
+ the libavahi-client library and avahi-utils.
+ .
+ Selecting this package modifies the build configuration
+ so that avahi packages are built with support for D-BUS enabled;
+ it does not generate a separate binary of its own.
+ It also automatically adds the D-Bus package to the build.
+ libavahi-dbus-support is selected automatically if you select
+ libavahi-client or avahi-utils.
+
+Package: libcap
+Version: 2.26-1
+Depends: libc
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 6793
+Filename: libcap_2.26-1_x86_64.ipk
+Size: 7527
+SHA256sum: 273b3529ad14917d227f2db61313a2178f474741426a22f4f07b5c32462b5db2
+Description:  Linux capabilities library
+
+Package: libcares
+Version: 1.14.0-1
+Depends: libc
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 30838
+Filename: libcares_1.14.0-1_x86_64.ipk
+Size: 31677
+SHA256sum: fac529d26f194bc61bd38565ac5d896590b33273d994fe5be913fc83a1412124
+Description:  c-ares is a C library for asynchronous DNS requests (including name resolves)
+ 
+ C89 compatibility, MIT licensed, builds for and runs on POSIX, Windows,
+ Netware, Android and many more operating systems.
+ 
+
+Package: libdaemon
+Version: 0.14-5
+Depends: libc
+Section: libs
+Architecture: x86_64
+Installed-Size: 8839
+Filename: libdaemon_0.14-5_x86_64.ipk
+Size: 9858
+SHA256sum: 25507f11499e3c74b98f100727c4e4d1d71ec1b6b911b255f8d338f3c3321289
+Description:  libdaemon is a lightweight C library that eases the writing of UNIX daemons.
+ It consists of the following parts:
+ - A wrapper around fork() which does the correct daemonization procedure of a process
+ - A wrapper around syslog() for simpler and compatible log output to Syslog or STDERR
+ - An API for writing PID files
+ - An API for serializing UNIX signals into a pipe for usage with select() or poll()
+ - An API for running subprocesses with STDOUT and STDERR redirected to syslog
+ 
+ APIs like these are used in most daemon software available. It is not that
+ simple to get it done right and code duplication is not a goal.
+
+Package: libdaq
+Version: 2.0.6-2
+Depends: libc, libdnet, libpcap
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 79281
+Filename: libdaq_2.0.6-2_x86_64.ipk
+Size: 80025
+SHA256sum: 4b41461a876ee5b089f19118f89e3de34acd91ded4dd7c15454ba220903f22ba
+Description:  Data Acquisition library for packet I/O.
+
+Package: libdb47
+Version: 4.7.25.4.NC-5
+Depends: libc, libxml2
+Provides: libdb47-full
+License: Sleepycat
+Section: libs
+Architecture: x86_64
+Installed-Size: 532841
+Filename: libdb47_4.7.25.4.NC-5_x86_64.ipk
+Size: 532992
+SHA256sum: 3fb0537566a5b961779ef4eaedd16995dee63d73aff2ec162a6cdcb1249a165a
+Description:  Berkeley DB library (4.7).
+
+Package: libdbus
+Version: 1.10.4-1
+Depends: libc, libpthread
+License: AFL-2.1
+Section: utils
+Architecture: x86_64
+Installed-Size: 121578
+Filename: libdbus_1.10.4-1_x86_64.ipk
+Size: 122263
+SHA256sum: 561c8f98b762c7f3fca7bede344635c35fa7417c3b9873dd2af5b5b22106f91d
+Description:  Simple interprocess messaging system (library)
+
+Package: libdevmapper
+Version: 2.02.177-1
+Depends: libc, kmod-dm, libpthread, libuuid, librt
+License: GPL-2.0 LGPL-2.1
+Section: libs
+Architecture: x86_64
+Installed-Size: 131832
+Filename: libdevmapper_2.02.177-1_x86_64.ipk
+Size: 132721
+SHA256sum: 1251d746bc2e3b6846c2c841c3d0c5b8cbdda54cb38beba3bbd6fe9d1a7e0d52
+Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
+ volume management. It is required by LVM2 and EVMS.
+
+Package: libdnet
+Version: 1.12-1
+Depends: libc
+License: BSD
+Section: libs
+Architecture: x86_64
+Installed-Size: 30347
+Filename: libdnet_1.12-1_x86_64.ipk
+Size: 30669
+SHA256sum: cc0e745fd1e3f0ced82662aab43268a80cce6b6c5e40ce7779bd5b2d2b13d4f0
+Description:  libdnet is a library of simplified, portable interface to several low-level
+ networking routines.
+
+Package: libdouble-conversion
+Version: 2.0-1
+Depends: libc, libstdcpp
+Section: libs
+Architecture: x86_64
+Installed-Size: 56676
+Filename: libdouble-conversion_2.0-1_x86_64.ipk
+Size: 56798
+SHA256sum: 3a8c806413a406eadc31035399047b5141bc65e891e5d37a8743132ae6365405
+Description:  double-conversion provides binary-decimal and decimal-binary routines for IEEE doubles.
+ 
+ The library consists of efficient conversion routines that have been extracted
+ from the V8 JavaScript engine. The code has been refactored and improved so that
+ it can be used more easily in other projects.
+
+Package: libedit
+Version: 20170329-3.1-1
+Depends: libc, libncurses6
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 71826
+Filename: libedit_20170329-3.1-1_x86_64.ipk
+Size: 72664
+SHA256sum: 2032bf8d825ab1b692fd566f4f66e6b0572106feb3143dffc63e610f795d9944
+Description:  Generic line editing, history, and tokenization functions similar to GNU Readline.
+
+Package: libev
+Version: 4.22-1
+Depends: libc
+License: BSD-2-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 20667
+Filename: libev_4.22-1_x86_64.ipk
+Size: 21485
+SHA256sum: 5121cb76538b91baa66339ab14b36efceb0bc79889892ff26007506c9d10227a
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libexif
+Version: 0.6.21-1
+Depends: libc
+License: LGPL-2.1
+Section: libs
+Architecture: x86_64
+Installed-Size: 71569
+Filename: libexif_0.6.21-1_x86_64.ipk
+Size: 71984
+SHA256sum: a4774bfbdba1d858db81cc86426a912c318284f1b6301574ee910f508b9ed554
+Description:  libexif is a library for parsing, editing, and saving EXIF data. It is
+ intended to replace lots of redundant implementations in command-line
+ utilities and programs with GUIs.
+
+Package: libexpat
+Version: 2.2.9-1
+Depends: libc
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 52315
+Filename: libexpat_2.2.9-1_x86_64.ipk
+Size: 53069
+SHA256sum: ec058f5f23d57d65f081a22dbf7627f47060a41b7c8cbf0ec97b98ba5db2ee76
+Description:  A fast, non-validating, stream-oriented XML parsing library.
+
+Package: libffi
+Version: 3.2.1-3
+Depends: libc
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 6341
+Filename: libffi_3.2.1-3_x86_64.ipk
+Size: 7414
+SHA256sum: 29496ae291a08a531c61c69060091fcf485e9b36643d1f6ef8173187ac00f710
+Description:  The libffi library provides a portable, high level programming interface to
+ various calling conventions. This allows a programmer to call any function
+ specified by a call interface description at run-time.
+ 
+ FFI stands for Foreign Function Interface. A foreign function interface is the
+ popular name for the interface that allows code written in one language to call
+ code written in another language. The libffi library really only provides the
+ lowest, machine dependent layer of a fully featured foreign function interface.
+ A layer must exist above libffi that handles type conversions for values passed
+ between the two languages.
+
+Package: libffmpeg-audio-dec
+Version: 3.4.7-5
+Depends: libc, libpthread, libpthread, zlib, libbz2
+Provides: libffmpeg
+License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 753469
+Filename: libffmpeg-audio-dec_3.4.7-5_x86_64.ipk
+Size: 752765
+SHA256sum: f3b8d6873373f8a358185c468314f8c85a6786f226adbc5254472039f542bdec
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+ 
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+ .
+ This package contains FFmpeg shared libraries for audio decoding
+
+Package: libffmpeg-full
+Version: 3.4.7-5
+Depends: libc, libpthread, libpthread, zlib, libbz2, alsa-lib, libopus, lame-lib, fdk-aac
+Provides: libffmpeg
+License: LGPL-2.1-or-later GPL-2.0-or-later LGPL-3.0-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 9204314
+Filename: libffmpeg-full_3.4.7-5_x86_64.ipk
+Size: 9126660
+SHA256sum: 2cf371c55e8e92317820e1bf6f66fd44d8d52b7ae65efc9f842c99eef7108be5
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+ 
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+ .
+ This package contains full-featured FFmpeg shared libraries.
+
+Package: libfko
+Version: 2.6.9-4
+Depends: libc
+License: GPLv2
+Section: libs
+Architecture: x86_64
+Installed-Size: 33956
+Filename: libfko_2.6.9-4_x86_64.ipk
+Size: 35103
+SHA256sum: bd049036234e8763b8563c8d4726c4d847b30a2ec4bb0463f405a7374790a4a7
+Description:  Fwknop implements an authorization scheme known as Single Packet Authorization
+ (SPA) for Linux systems running iptables.  This mechanism requires only a
+ single encrypted and non-replayed packet to communicate various pieces of
+ information including desired access through an iptables policy. The main
+ application of this program is to use iptables in a default-drop stance to
+ protect services such as SSH with an additional layer of security in order to
+ make the exploitation of vulnerabilities (both 0-day and unpatched code) much
+ more difficult.
+ This package contains the libfko shared library.
+
+Package: libflac
+Version: 1.3.2-1
+Depends: libc
+License: GFDL-1.2 GPL-2 LGPL-2.1 BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 93335
+Filename: libflac_1.3.2-1_x86_64.ipk
+Size: 94180
+SHA256sum: 89439734c12d383ce17db966c4c75dcd80f550767834aae53a7fc90e7759b4e3
+Description:  Free Lossless Audio Codec library
+
+Package: libfreetype
+Version: 2.9-1
+Depends: libc, zlib, libbz2, libpng
+License: FTL GPL-2.0 MIT ZLIB
+Section: libs
+Architecture: x86_64
+Installed-Size: 295810
+Filename: libfreetype_2.9-1_x86_64.ipk
+Size: 296615
+SHA256sum: c1192cbf81b2a501953709580e80ff01138a952f99c175607dd3555c50eee8d3
+Description:  The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+
+Package: libgcrypt
+Version: 1.8.5-1
+Depends: libc, libgpg-error
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 431954
+Filename: libgcrypt_1.8.5-1_x86_64.ipk
+Size: 431233
+SHA256sum: 02587ec2f4bbc64497652e1874e8a31535c97a9cc2f253293749bae1cad2939a
+Description:  This is a general purpose cryptographic library based on the code from
+ GnuPG. It provides functions for all cryptograhic building blocks:
+ symmetric ciphers (AES, DES, Arcfour, CAST5), hash algorithms (MD5, SHA-1,
+ RIPE-MD160, SHA-224/256, SHA-384/512), MACs (HMAC for all hash
+ algorithms), public key algorithms (RSA, DSA), large integer functions,
+ random numbers and a lot of supporting functions. Some algorithms have
+ been disabled to reduce size (Blowfish, Twofish, Serpent,
+ RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
+
+Package: libgd
+Version: 2.2.5-1
+Depends: libc, libjpeg, libpng
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 98205
+Filename: libgd_2.2.5-1_x86_64.ipk
+Size: 98432
+SHA256sum: fbb12f743a86c4aa8cca51e59378bc54d897964002bee5df021eae168651d42f
+Description:  GD is an open source code library for the dynamic creation of images by
+ programmers. GD creates PNG, JPEG and GIF images, among other formats.
+
+Package: libgdbm
+Version: 1.11-1
+Depends: libc
+License: GPL-3.0+
+Section: libs
+Architecture: x86_64
+Installed-Size: 16384
+Filename: libgdbm_1.11-1_x86_64.ipk
+Size: 17150
+SHA256sum: f90cf7e804b0389884621206ee8fe2b96e7d7fe68693f67d55236628c06bc265
+Description:  GNU database manager library
+ GNU dbm is a set of database routines that use extendible hashing and
+ works similar to the standard UNIX dbm routines.
+
+Package: libgnutls
+Version: 3.5.19-1
+Depends: libc, libnettle, libgmp
+License: LGPLv2.1+
+Section: libs
+Architecture: x86_64
+Installed-Size: 523902
+Filename: libgnutls_3.5.19-1_x86_64.ipk
+Size: 524205
+SHA256sum: acac415dcd0f5fba4bd2f69c9e96f26cf6d2f696633d8e93f3151a1975f0df2b
+Description:  GnuTLS is a secure communications library implementing the SSL, TLS
+ and DTLS protocols and technologies around them. It provides a simple
+ C language application programming interface (API) to access the secure
+ communications protocols as well as APIs to parse and write X.509, PKCS12,
+ OpenPGP and other required structures. It is aimed to be portable and
+ efficient with focus on security and interoperability.
+ This package contains the GnuTLS shared library, needed by other programs.
+
+Package: libgpg-error
+Version: 1.36-3
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 49324
+Filename: libgpg-error_1.36-3_x86_64.ipk
+Size: 50296
+SHA256sum: 5bd40c6e3e5f3e80d602bd855860f35810693090ae26ba3f55a7fc8a5d70cf73
+Description:  An helper library for common error codes and descriptions.
+ This is a library that defines common error values for all GnuPG
+ components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly more in the
+ future.
+
+Package: libhttp-parser
+Version: 2.9.2-2
+Depends: libc
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 14904
+Filename: libhttp-parser_2.9.2-2_x86_64.ipk
+Size: 15853
+SHA256sum: 9574e2c5a69584d3ed220e7a9080565e8d41b01e821a0360fcd217ef7febf14c
+Description:  A parser for HTTP messages written in C. It parses both requests and responses.
+ The parser is designed to be used in performance HTTP applications.
+ It does not make any syscalls nor allocations, it does not buffer data,
+ it can be interrupted at anytime. Depending on your architecture,
+ it only requires about 40 bytes of data per message stream
+ (in a web server that is per connection).
+
+Package: libid3tag
+Version: 0.15.1b-4
+Depends: libc, zlib
+License: GPL-2
+Section: libs
+Architecture: x86_64
+Installed-Size: 31523
+Filename: libid3tag_0.15.1b-4_x86_64.ipk
+Size: 32085
+SHA256sum: c808fc0d6c1118c37e5f8a3d64f59dba6f2a153ea8490e32c6b1608e9e7e3ded
+Description:  libid3tag is a library for reading and (eventually) writing ID3 tags, both
+ ID3v1 and the various versions of ID3v2.
+
+Package: libjpeg
+Version: 9a-1
+Depends: libc
+License: IJG
+Section: libs
+Architecture: x86_64
+Installed-Size: 97826
+Filename: libjpeg_9a-1_x86_64.ipk
+Size: 98632
+SHA256sum: ec36e2a8408c1cdedaff458abda4514ed0aba4f5395935bcd9ab258db0fd4407
+Description:  The Independent JPEG Group's JPEG runtime library
+
+Package: libkeyutils1
+Version: 1.6-3
+Depends: libc
+Provides: libkeyutils
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 5109
+Filename: libkeyutils1_1.6-3_x86_64.ipk
+Size: 5823
+SHA256sum: f845cb962b764c219d6a19fe2d5b5e1b98751be35c983830bebcbea11dc33490
+Description:  Key utilities library
+
+Package: libkmod
+Version: 20-1
+Depends: libc, zlib
+License: LGPL-2.1+
+Section: libs
+Architecture: x86_64
+Installed-Size: 33281
+Filename: libkmod_20-1_x86_64.ipk
+Size: 34085
+SHA256sum: 02e9cf97923d6440b09b05d452c359dc08bd0c31e69ae700da5e58d520bb6537
+Description:  Linux kernel module handling (library)
+
+Package: liblxc
+Version: 2.1.1-2
+Depends: libc, lxc, libcap, libpthread
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 243164
+Filename: liblxc_2.1.1-2_x86_64.ipk
+Size: 243698
+SHA256sum: 2196c959d9b2c887290c9260da8aff637cccf61ab175cf0f56335c04b132a7a3
+Description:  LXC userspace library
+
+Package: libmilter-sendmail
+Version: 8.15.2-2
+Depends: libc, libpthread
+License: Sendmail
+Section: libs
+Architecture: x86_64
+Installed-Size: 20980
+Filename: libmilter-sendmail_8.15.2-2_x86_64.ipk
+Size: 21773
+SHA256sum: 7853d9abf09a4f2622a512f5257d499548b4481f8700b9ac4d977ac5d3680755
+Description:  The sendmail Mail Filter API (Milter) is designed to allow third-party
+ programs access to mail messages as they are being processed in order to
+ filter meta-information and content.
+
+Package: libminiupnpc
+Version: 2.0.20170509-1
+Depends: libc
+Section: libs
+Architecture: x86_64
+Installed-Size: 20858
+Filename: libminiupnpc_2.0.20170509-1_x86_64.ipk
+Size: 21553
+SHA256sum: 9a04a6bb49b77176f848f530c328df688c325eb3842a45cfa24e86a814c7ea5e
+Description:  Lightweight UPnP library
+
+Package: libnatpmp
+Version: 20150609-1
+Depends: libc
+License: BSD-3c
+Section: libs
+Architecture: x86_64
+Installed-Size: 3347
+Filename: libnatpmp_20150609-1_x86_64.ipk
+Size: 4255
+SHA256sum: 373fb0784ef855917d4d794f437c90e84053d4e7cd208c36b79072aa4440ac6c
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
+Package: libnet-1.2.x
+Version: 1.2-rc3-4
+Depends: libc, libpcap
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 35772
+Filename: libnet-1.2.x_1.2-rc3-4_x86_64.ipk
+Size: 36588
+SHA256sum: 47eedbb672c214101e9c2c43eb275e41e859360d26e11778c3a77296af7faddd
+Description:  Low-level packet creation library
+
+Package: libnetwork
+Version: 2019-10-15-45c71022-2
+Depends: libc
+License: Apache-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 8174973
+Filename: libnetwork_2019-10-15-45c71022-2_x86_64.ipk
+Size: 8155905
+SHA256sum: 8089917e3dc005f63c216f38c1aa3ce6dd4418e119833cb0faed89e9ef96f01a
+Description:  Libnetwork provides a native Go implementation for connecting containers.
+ The goal of libnetwork is to deliver a robust Container Network Model that provides a consistent programming interface and the required network abstractions for applications.
+
+Package: libogg
+Version: 1.3.2-2
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 9898
+Filename: libogg_1.3.2-2_x86_64.ipk
+Size: 10791
+SHA256sum: 4e2c200d5a32d63b2c2618347c472157431ea70ae4e4ead56eb11c88a54a0e53
+Description:  Ogg project codecs use the Ogg bitstream format to arrange the raw,
+ compressed bitstream into a more robust, useful form.  For example,
+ the Ogg bitstream makes seeking, time stamping and error recovery
+ possible, as well as mixing several sepearate, concurrent media
+ streams into a single physical bitstream.
+
+Package: libopus
+Version: 1.2.1-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 158832
+Filename: libopus_1.2.1-1_x86_64.ipk
+Size: 159721
+SHA256sum: 78e87c9bbeb5876f910eedb967740c94433d0670b079af82b9ef79d9dc0fe017
+Description:  Opus is a totally open, royalty-free, highly versatile audio codec. Opus is
+ unmatched for interactive speech and music transmission over the Internet, but
+ is also intended for storage and streaming applications.
+
+Package: libpagekite
+Version: 0.91.171102C-1
+Depends: libc, libopenssl1.1, libpthread, libev
+License: Apache-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 134181
+Filename: libpagekite_0.91.171102C-1_x86_64.ipk
+Size: 135125
+SHA256sum: 72e2d2e9775349fec92576e82f3420c1a1233b03caef2336aa2a7b9595bc061f
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of tunnels and reverse proxies.
+ 
+ This package provides an implementation of the PageKite Protocol in C,
+ optimized for high-performance or embedded applications.
+ 
+ 
+ This package contains the core library
+
+Package: libpam
+Version: 1.2.0-2
+Depends: libc
+Section: libs
+Architecture: x86_64
+Installed-Size: 172361
+Filename: libpam_1.2.0-2_x86_64.ipk
+Size: 172144
+SHA256sum: 3c6577f38392fb308aa76f179926938b35189bcf4211c8ca4f619f4f16064adf
+Description:  The Linux-PAM Pluggable Authentication Modules.
+
+Package: libpcre2-16
+Version: 10.30-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 93213
+Filename: libpcre2-16_10.30-1_x86_64.ipk
+Size: 94077
+SHA256sum: 921e970e8a0d44b7a964795efc52cc35656d2202ce313e89f51702d537f4d12e
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
+Package: libpcre2
+Version: 10.30-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 103366
+Filename: libpcre2_10.30-1_x86_64.ipk
+Size: 104243
+SHA256sum: f4abe0e1a9a2dcb4c39765a2f8d27623f67f30c8bff4183284db3111d5ae9835
+Description:  A Perl Compatible Regular Expression library
+
+Package: libpcre
+Version: 8.41-2
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 81685
+Filename: libpcre_8.41-2_x86_64.ipk
+Size: 82502
+SHA256sum: 9ef878bf4b158aa0a66ac9eeb16aabf2311fdf903e0a34a6c887928e3471fcce
+Description:  A Perl Compatible Regular Expression library
+
+Package: libplist
+Version: 2.0.0-3
+Depends: libc, libxml2
+License: LGPL-2.1+
+Section: libs
+Architecture: x86_64
+Installed-Size: 23194
+Filename: libplist_2.0.0-3_x86_64.ipk
+Size: 23932
+SHA256sum: 90c2d275e4fb9f57d30c26063e0f88429460d8b7848db6f87e821b05a1b2e036
+Description:  A library to handle Apple Property List format whereas it's binary or XML
+
+Package: libpng
+Version: 1.6.34-1
+Depends: libc, zlib
+License: Libpng GPL-2.0+ BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 89890
+Filename: libpng_1.6.34-1_x86_64.ipk
+Size: 90678
+SHA256sum: 5482c1c558f37777494ae6a552a854ad8416f5f82d38a65e8f77854c825378d0
+Description:  A PNG format files handling library
+
+Package: libprotobuf-c
+Version: 1.3.1-1
+Depends: libc
+License: BSD-2c
+Section: libs
+Architecture: x86_64
+Installed-Size: 11510
+Filename: libprotobuf-c_1.3.1-1_x86_64.ipk
+Size: 12339
+SHA256sum: fb6d69b311920dffab481066bb8a1bdb8b43daac93b9fd1e9c4d3aecd7124ef8
+Description:  Runtime library to use Google Protocol Buffers from C applications.
+ Protocol Buffers are a way of encoding structured data in an efficient yet
+ extensible format. Google uses Protocol Buffers for almost all of its
+ internal RPC protocols and file formats.
+
+Package: libqrencode
+Version: 4.0.0-1
+Depends: libc
+License: LGPL-2.1+
+Section: libs
+Architecture: x86_64
+Installed-Size: 17517
+Filename: libqrencode_4.0.0-1_x86_64.ipk
+Size: 18366
+SHA256sum: 8942b96f211436886ce57eb115c7752aea5780536023107da09fa3e71fd728fd
+Description:  Libqrencode is a C library for encoding data in a QR Code symbol,
+ a kind of 2D symbology that can be scanned by handy terminals such
+ as a mobile phone with CCD. The capacity of QR Code is up to 7000
+ digits or 4000 characters, and is highly robust.
+
+Package: librrd1
+Version: 1.0.50-2
+Depends: libc, zlib
+Section: libs
+Architecture: x86_64
+Installed-Size: 138980
+Filename: librrd1_1.0.50-2_x86_64.ipk
+Size: 139901
+SHA256sum: 184dda4ff95b5bd91b9163a51f9d809e3d6a77d5a773c7e1f0ef83398bc1ae22
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains a shared library, used by other programs.
+
+Package: librtlsdr
+Version: 0.5.3-20150608--3
+Depends: libc, libusb-1.0
+License: GPLv2
+Section: libs
+Architecture: x86_64
+Installed-Size: 21221
+Filename: librtlsdr_0.5.3-20150608--3_x86_64.ipk
+Size: 22076
+SHA256sum: 580e47ad489caa6f30a9eb986de5988aec523070916348c4dbc30c53074d07b8
+Description:  rtl-sdr allows DVB-T dongles based on the Realtek RTL2832U to be used as
+ an inexpensive SDR.
+ 
+ This package contains the librtlsdr shared library.
+
+Package: libsensors5
+Version: 3.5.0-6
+Depends: libc, sysfsutils
+Provides: libsensors
+License: GPL-2.0-or-later LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 20968
+Filename: libsensors5_3.5.0-6_x86_64.ipk
+Size: 21630
+SHA256sum: 956f316d8a0de979776a9d771f4f41b2702268e6265badd4da0bb61e1043359f
+Description:  lm-sensors libraries
+
+Package: libsodium
+Version: 1.0.16-1
+Depends: libc
+License: ISC
+Section: libs
+Architecture: x86_64
+Installed-Size: 139733
+Filename: libsodium_1.0.16-1_x86_64.ipk
+Size: 140995
+SHA256sum: ac04ff67c2c5239bfaffc19b674d8cc731eea4ef8abd103929704b50487cd10e
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libsoxr
+Version: 0.1.3-1
+Depends: libc, libpthread
+License: LGPL-2.1
+Section: libs
+Architecture: x86_64
+Installed-Size: 71268
+Filename: libsoxr_0.1.3-1_x86_64.ipk
+Size: 72024
+SHA256sum: f55b1df4d92c36f9f96843f90a02d83d6ecd034973cd8d6def7f28dae743da17
+Description:  The SoX Resampler library
+ High quality, one-dimensional sample-rate conversion library
+
+Package: libsqlite3
+Version: 3230100-1
+Depends: libc, libpthread, zlib
+License: PUBLICDOMAIN
+Section: libs
+Architecture: x86_64
+Installed-Size: 366711
+Filename: libsqlite3_3230100-1_x86_64.ipk
+Size: 367570
+SHA256sum: 9bd986d4f3550b548e65c209be606550c298be5129d588699a7132670ac73ef5
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: libtasn1
+Version: 4.16.0-2
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 31485
+Filename: libtasn1_4.16.0-2_x86_64.ipk
+Size: 32296
+SHA256sum: d3e39c61bc168882d052ad200995908662c2e3e0e49229a0a1a66de0bb67c908
+Description:  This is a library for Abstract Syntax Notation One (ASN.1) and
+ Distinguish Encoding Rules (DER) manipulation.
+
+Package: libtins
+Version: v3.5-1
+Depends: libc, libstdcpp, libpcap
+License: BSD-2-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 196490
+Filename: libtins_v3.5-1_x86_64.ipk
+Size: 197083
+SHA256sum: 9bd6bcdaa60d83a264afe17459bafa686e26c2c697a2a09a7ff7a2a9b81c6059
+Description:  libtins is a high-level, multiplatform C++ network packet sniffing and crafting library.
+
+Package: libtirpc
+Version: 1.1.4-1
+Depends: libc, libpthread
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 69550
+Filename: libtirpc_1.1.4-1_x86_64.ipk
+Size: 70377
+SHA256sum: bdbcabd3792674e51f82894b208dda3eb6b0195f9d865ff5bd96784ecb0ab09e
+Description:  Library TI RPC for RPC bindings
+
+Package: libunbound
+Version: 1.9.5-1
+Depends: libc, libopenssl1.1
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 373537
+Filename: libunbound_1.9.5-1_x86_64.ipk
+Size: 370412
+SHA256sum: 513ddd3a1485f7be95b4053df9445053e26fe1b48dfbbc0a4f6a0990d3d68caf
+Description:  This package contains the Unbound shared library with basic includes
+ necessary to meet the needs of UCI/LuCI configuration optoins.
+
+Package: libunistring
+Version: 0.9.8-1
+Depends: libc
+License: GPL-3.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 604564
+Filename: libunistring_0.9.8-1_x86_64.ipk
+Size: 594946
+SHA256sum: ad5591f700c50c92d3859dab20b3c2ddebde81563bc76c5f6e600f57a82b8b3a
+Description:  This library provides functions for manipulating Unicode strings and for manipulating C strings according to the Unicode standard.
+
+Package: libupnp
+Version: 1.6.19-2
+Depends: libc, libpthread
+Section: libs
+Architecture: x86_64
+Installed-Size: 93617
+Filename: libupnp_1.6.19-2_x86_64.ipk
+Size: 94547
+SHA256sum: cb9a316c30f286f0e337b14281117b3d8c7e5417f25c7265ebc9d937e2a5b3c4
+Description:  The portable SDK for UPnP Devices (libupnp) provides developers with an API and
+ open source code for building control points, devices, and bridges that are
+ compliant with Version 1.0 of the  Universal Plug and Play Device Architecture
+ Specification.
+
+Package: liburcu
+Version: 0.9.4-1
+Depends: libc, libpthread
+License: LGPL-2.1 GPL-2.0 GPL-3.0 MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 51772
+Filename: liburcu_0.9.4-1_x86_64.ipk
+Size: 52440
+SHA256sum: cbd1a46fcfd24e2d2a0570bb3681aa4cbadf096ab4203ba24435ea3fa22486c7
+Description:  Userspace Read-Copy-Update library.
+
+Package: libuv1
+Version: 1.32.0-1
+Depends: libc, libpthread, librt
+Provides: libuv
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 59471
+Filename: libuv1_1.32.0-1_x86_64.ipk
+Size: 60394
+SHA256sum: ca6dea2fe2331f4377bf6fa90060d9e6c337f89a574c8722d923a8dd01bbcb60
+Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
+ was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
+ pyuv, and others.
+
+Package: libvorbis
+Version: 1.3.6-1
+Depends: libc, libogg
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 197188
+Filename: libvorbis_1.3.6-1_x86_64.ipk
+Size: 196137
+SHA256sum: fd08b7322236108dcd68e973a6bccd1454c8d21b703c8fa975d15c55aa2ce326
+Description:  Vorbis is a general purpose audio and music encoding format
+ contemporary to MPEG-4's AAC and TwinVQ, the next generation beyond
+ MPEG audio layer 3. Unlike the MPEG sponsored formats (and other
+ proprietary formats such as RealAudio G2 and Windows' flavor of the
+ month), the Vorbis CODEC specification belongs to the public domain.
+ All the technical details are published and documented, and any
+ software entity may make full use of the format without license
+ fee, royalty or patent concerns.
+
+Package: libwebsockets-full
+Version: 2.4.1-2
+Depends: libc, zlib, libcap, libopenssl1.1, libuv1
+Provides: libwebsockets
+License: LGPL-2.1+exception
+Section: libs
+Architecture: x86_64
+Installed-Size: 86440
+Filename: libwebsockets-full_2.4.1-2_x86_64.ipk
+Size: 87282
+SHA256sum: 5d34c2e344fda84877fb40df89f5ef444075aefb87a727aacc25eb398ffbe707
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: libwrap
+Version: 7.6-1
+Depends: libc
+License: BSD
+Section: libs
+Architecture: x86_64
+Installed-Size: 11655
+Filename: libwrap_7.6-1_x86_64.ipk
+Size: 12386
+SHA256sum: 135bd2ef4ab0c9a595834929d05bdfddba9ae227c3b51a327acb2b3f503d744c
+Description:  Security wrapper library for TCP services
+
+Package: libxml2
+Version: 2.9.9-3
+Depends: libc, libpthread, zlib
+License: MIT
+Section: libs
+Architecture: x86_64
+Installed-Size: 505497
+Filename: libxml2_2.9.9-3_x86_64.ipk
+Size: 504822
+SHA256sum: ebdf676508d385cb127159dc4535dc3f2adf6ac5bdd8ad07958904ffefdddbbf
+Description:  A library for manipulating XML and HTML resources.
+
+Package: libyaml-cpp
+Version: beb44b87-1
+Depends: libc, libstdcpp
+License: MIT
+Section: development
+Architecture: x86_64
+Installed-Size: 89167
+Filename: libyaml-cpp_beb44b87-1_x86_64.ipk
+Size: 90001
+SHA256sum: 6753fce54ecbd30059d8f9b489f31538730ae532c5ad94aaae9a7c7de4362184
+Description:  yaml-cpp is a YAML parser and emitter in C++ matching the YAML 1.2 spec.
+
+Package: libzstd
+Version: 1.3.8-1
+Depends: libc
+License: GPL-2.0-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 596547
+Filename: libzstd_1.3.8-1_x86_64.ipk
+Size: 597366
+SHA256sum: 8f172c3cbe1befe5599834b572a6b0beebd8ff295b710c48ccaec8b63e9a2f56
+Description:  Zstandard - Fast real-time compression algorithm.
+ This package provides libzstd library.
+
+Package: lm-sensors
+Version: 3.5.0-6
+Depends: libc, sysfsutils, libsensors5
+License: GPL-2.0-or-later LGPL-2.1-or-later
+Section: utils
+Architecture: x86_64
+Installed-Size: 8061
+Filename: lm-sensors_3.5.0-6_x86_64.ipk
+Size: 8851
+SHA256sum: 669aa942e3524e82c27cab185be0b357ed3f97be544b2dfb144fa1ced03884a9
+Description:  utility to read hardware sensor data
+
+Package: lua-bencode
+Version: 2.1.0-1
+Depends: libc, lua
+License: MIT
+Section: lang
+Architecture: x86_64
+Installed-Size: 1453
+Filename: lua-bencode_2.1.0-1_x86_64.ipk
+Size: 2261
+SHA256sum: 3a9b95675de33fb169ca1fbdc97cef382636442c7383da800390ba5e96fca477
+Description:  This is a module for the lua programming language for decoding and encoding
+ bencoded data which can be used to read and write torrent files for bittorrent.
+
+Package: lua-sha2
+Version: 0.2.0-1
+Depends: libc, lua
+License: MIT
+Section: lang
+Architecture: x86_64
+Installed-Size: 7169
+Filename: lua-sha2_0.2.0-1_x86_64.ipk
+Size: 7991
+SHA256sum: dc2db0a593b1451ca1a4c5417eff1255d61df92fb2f9a8a358df45f455b7c7d6
+Description:  Lua Binding for the SHA-2 (SHA-256/384/512) BSD-licensed C implementation by Aaron Gifford.
+ Also contains a HMAC implementation in Lua.
+
+Package: luasocket
+Version: 3.0-rc1-20130909-4
+Depends: libc, lua
+Section: lang
+Architecture: x86_64
+Installed-Size: 53286
+Filename: luasocket_3.0-rc1-20130909-4_x86_64.ipk
+Size: 54126
+SHA256sum: 02dee21d38b18c83160bb0faec5e7609af0ab49683f73465c8732a1b42c167dd
+Description:  LuaSocket is the most comprehensive networking support
+ library for the Lua language. It provides easy access to
+ TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
+
+Package: luci-app-acme
+Version: 2.8.3-2
+Depends: libc, lua, luci-base, acme
+License: GPL-3.0-only
+Section: luci
+Architecture: all
+Installed-Size: 2386
+Filename: luci-app-acme_2.8.3-2_all.ipk
+Size: 3313
+SHA256sum: 56675e95b5a43586fdcbe34862087917d6f6e057141a1d5d76335a3e27820082
+Description:  Control the ACME Letsencrypt certificate interface
+
+Package: luci-app-sqm
+Version: 1.4.0-2
+Depends: libc, lua, luci-base, sqm-scripts
+License: GPLv2
+Section: luci
+Architecture: all
+Installed-Size: 4004
+Filename: luci-app-sqm_1.4.0-2_all.ipk
+Size: 4961
+SHA256sum: 3d82a6a85839ee0d6aab01b2f46a588f61c2bfa941d48da3b441476cf5c21ab1
+Description:  Luci interface for the SQM scripts queue management configuration package.
+
+Package: lxc-attach
+Version: 2.1.1-2
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 5733
+Filename: lxc-attach_2.1.1-2_x86_64.ipk
+Size: 6494
+SHA256sum: b0f8f52fb15d099538d3fa173c464051736fe662d07e586f18d78ad4914b6772
+Description:  Utility lxc-attach from the LXC userspace tools
+
+Package: lxc-common
+Version: 2.1.1-2
+Depends: libc, lxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 1157
+Filename: lxc-common_2.1.1-2_x86_64.ipk
+Size: 1938
+SHA256sum: 424fabb2412da4709762ea3111c2b6bee9dfe939b993caf52cc4a196ad70cefb
+Description:  LXC common files
+
+Package: lxc-configs
+Version: 2.1.1-2
+Depends: libc, lxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 5166
+Filename: lxc-configs_2.1.1-2_x86_64.ipk
+Size: 5904
+SHA256sum: b0b4c6bd65a60144900d5e40f775227f41f20057444683bb4f5f033c29f1e0f1
+Description:  LXC virtual machine common config files
+
+Package: lxc-console
+Version: 2.1.1-2
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 2332
+Filename: lxc-console_2.1.1-2_x86_64.ipk
+Size: 3099
+SHA256sum: be78f7aae0fe5eeb32ff8d9a6581939a8be21d2bd8444342d57e9fd0955c3b4d
+Description:  Utility lxc-console from the LXC userspace tools
+
+Package: lxc-create
+Version: 2.1.1-2
+Depends: libc, lxc, lxc-common, libpthread, libcap, liblxc, lxc-configs, lxc-hooks, lxc-templates, flock
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 4722
+Filename: lxc-create_2.1.1-2_x86_64.ipk
+Size: 5528
+SHA256sum: cc318356e678037c54569b8be1afa71a155618fdcb2ef6991135aaf6d84de6bf
+Description:  Utility lxc-create from the LXC userspace tools
+
+Package: lxc-hooks
+Version: 2.1.1-2
+Depends: libc, lxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 4302
+Filename: lxc-hooks_2.1.1-2_x86_64.ipk
+Size: 5053
+SHA256sum: 840275424e3293c9050406b2de702eb06052cac8fab6325be1e0ffe85fcdc267
+Description:  LXC virtual machine hooks
+
+Package: lxc-templates
+Version: 2.1.1-2
+Depends: libc, lxc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 124908
+Filename: lxc-templates_2.1.1-2_x86_64.ipk
+Size: 125639
+SHA256sum: fc2b52375547e26e3b068ece0de6885a74f07898c7a17c0e5e87718529951f4b
+Description:  LXC virtual machine templates
+
+Package: lxc
+Version: 2.1.1-2
+Depends: libc
+License: LGPL-2.1+ BSD-2-Clause GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 105
+Filename: lxc_2.1.1-2_x86_64.ipk
+Size: 898
+SHA256sum: 903060f01c290f6c63501ee22edef3c0a6791d678b1a0f17acf5fe300178a6dd
+Description:  LXC is the userspace control package for Linux Containers, a lightweight
+ virtual system mechanism sometimes described as "chroot on steroids".
+
+Package: minidlna
+Version: 1.2.1-6
+Depends: libc, libpthread, libexif, libjpeg, libsqlite3, libffmpeg-full, libid3tag, libflac, libvorbis, libuuid
+License: GPL-2.0 BSD-3-Clause
+Section: multimedia
+Architecture: x86_64
+Installed-Size: 128122
+Filename: minidlna_1.2.1-6_x86_64.ipk
+Size: 129084
+SHA256sum: 6f44402195276adf5a7cd81eb3e9dad080d47fbe6e31386f97c8a182e1218302
+Description:  MiniDLNA (aka ReadyDLNA) is server software with the aim of
+ being fully compliant with DLNA/UPnP-AV clients.
+
+Package: miniupnpc
+Version: 2.0.20170509-1
+Depends: libc, libminiupnpc
+Section: net
+Architecture: x86_64
+Installed-Size: 26491
+Filename: miniupnpc_2.0.20170509-1_x86_64.ipk
+Size: 27154
+SHA256sum: 19ee0d9fe28d4fefa90b237f59432c312dfcb1cbeab3ee5290d9710481cfb224
+Description:  Lightweight UPnP client
+
+Package: miniupnpd
+Version: 2.0.20170421-3
+Depends: libc, iptables, libip4tc2, libuuid
+License: BSD-3-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 57547
+Filename: miniupnpd_2.0.20170421-3_x86_64.ipk
+Size: 58576
+SHA256sum: bfef724bc65bc5a22865fcfde2fb5efb00e16e04a8ef703da1600bde5832cccc
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mjpg-streamer
+Version: r182-10
+Depends: libc, libpthread, libjpeg
+License: GPL-2.0
+Section: multimedia
+Architecture: x86_64
+Installed-Size: 36522
+Filename: mjpg-streamer_r182-10_x86_64.ipk
+Size: 37427
+SHA256sum: fd036f85f14474a94c23dd97aca09efa2eaa6b6e3ebc1e19e80fb8b792a1bcba
+Description:  Streaming application for Linux-UVC compatible webcams
+
+Package: musl-fts
+Version: 1.2.7-1
+Depends: libc, libpthread
+License: LGPL-2.1
+Section: libs
+Architecture: x86_64
+Installed-Size: 4906
+Filename: musl-fts_1.2.7-1_x86_64.ipk
+Size: 5670
+SHA256sum: 8bcad62708d798f41bb15f53ac3ca2caf6014cfb53232d010cf2661611cfd730
+Description:  The musl-fts package implements the fts(3) functions fts_open, fts_read, fts_children, fts_set and fts_close, which are missing in musl libc.
+
+Package: mwan3
+Version: 2.6.18-1
+Depends: libc, ip, ipset, iptables, iptables-mod-conntrack-extra, iptables-mod-ipopt, jshn
+License: GPLv2
+Section: net
+Architecture: all
+Installed-Size: 11099
+Filename: mwan3_2.6.18-1_all.ipk
+Size: 12123
+SHA256sum: 9e041e5b4abf7ab4fd63316a2fbb779bbc8b0e9854af31bcc2aa1fcdf2a90cc1
+Description:  Hotplug script which makes configuration of multiple WAN interfaces simple
+ and manageable. With loadbalancing/failover support for up to 250 wan
+ interfaces, connection tracking and an easy to manage traffic ruleset.
+
+Package: mxml
+Version: 2.10-1
+Depends: libc
+License: GPL-2.0
+Section: libs
+Architecture: x86_64
+Installed-Size: 19900
+Filename: mxml_2.10-1_x86_64.ipk
+Size: 20515
+SHA256sum: 2fb4ff00acd18998f5da378a4cdfbedc8e2eac551419199fad8793b7c8bb34af
+Description:  A small xml library.
+
+Package: natpmpc
+Version: 20150609-1
+Depends: libc, libnatpmp
+License: BSD-3c
+Section: net
+Architecture: x86_64
+Installed-Size: 3214
+Filename: natpmpc_20150609-1_x86_64.ipk
+Size: 4118
+SHA256sum: 53a4035d9e71095641d56182b9afff24ddba212a1473bffe8470b27e7be5f745
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the natpmp client.
+
+Package: netdata
+Version: 1.20.0-1
+Depends: libc, zlib, libuuid, libmnl0, libjson-c, libuv1
+License: GPL-3.0-or-later
+Section: admin
+Architecture: x86_64
+Installed-Size: 1634014
+Filename: netdata_1.20.0-1_x86_64.ipk
+Size: 1634108
+SHA256sum: 468d8674f2ed91cb3891d6f8baeed3461ace5f3bc8f028dae60e47b35e588e2d
+Description:  netdata is a highly optimized Linux daemon providing real-time performance
+ monitoring for Linux systems, applications and SNMP devices over the web.
+ 
+ If you want to use Python plugins install python3, python3-yaml and
+ python3-urllib3
+
+Package: nfs-kernel-server-utils
+Version: 2.3.4-2
+Depends: libc, nfs-kernel-server
+Section: net
+Architecture: x86_64
+Installed-Size: 12913
+Filename: nfs-kernel-server-utils_2.3.4-2_x86_64.ipk
+Size: 13589
+SHA256sum: 2b790ba381588254635cb7dd7645e8e66b2f1d4112a10fe8e0959d84e938e8a6
+Description:  NFS server utils
+
+Package: nfs-kernel-server
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid, libuuid, libtirpc, kmod-fs-nfsd, kmod-fs-nfs, kmod-fs-nfs-v4, rpcbind, nfs-utils-libs, libkeyutils1, libdevmapper
+Section: net
+Architecture: x86_64
+Installed-Size: 155092
+Filename: nfs-kernel-server_2.3.4-2_x86_64.ipk
+Size: 155795
+SHA256sum: 8a46f723b6b26f7e866cda6bc5af6c8949e8df12e8280caf4e867dec91227b7d
+Description:  Kernel NFS server support
+
+Package: nfs-utils-libs
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid, libuuid, libtirpc, libkeyutils1, libdevmapper
+Section: utils
+Architecture: x86_64
+Installed-Size: 16806
+Filename: nfs-utils-libs_2.3.4-2_x86_64.ipk
+Size: 17570
+SHA256sum: e55636c36139051477c66165bf9a6c324e56f202c37c004fdd7239404138a211
+Description:  Libraries provided by nfs-utils
+
+Package: nfs-utils
+Version: 2.3.4-2
+Depends: libc, libwrap, libblkid, libuuid, libtirpc, libkeyutils1, libdevmapper
+Section: utils
+Architecture: x86_64
+Installed-Size: 52650
+Filename: nfs-utils_2.3.4-2_x86_64.ipk
+Size: 53513
+SHA256sum: 551777818f2ab6eaa338894bffe8299d0487262ffc39bec7aa7bf35e56ae6241
+Description:  Updated mount.nfs command - allows mounting nfs4 volumes
+
+Package: nginx
+Version: 1.16.1-2
+Depends: libc, libpcre, libopenssl1.1, zlib, liblua5.1.5, libpthread, libexpat
+License: 2-clause BSD-like license
+Section: net
+Architecture: x86_64
+Installed-Size: 996787
+Filename: nginx_1.16.1-2_x86_64.ipk
+Size: 978737
+SHA256sum: 48338d224f00def8e842ba77618f5c5d3d1d58e4eb7f60081a8d4968742eeb2e
+Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. (Some module require SSL module enable to show up in config menu)
+
+Package: nlbwmon
+Version: 2019-06-06-4574e6e8-1
+Depends: libc, libubox20170601, libnl-tiny, zlib, kmod-nf-conntrack-netlink
+License: ISC
+Section: net
+Architecture: x86_64
+Installed-Size: 19263
+Filename: nlbwmon_2019-06-06-4574e6e8-1_x86_64.ipk
+Size: 20079
+SHA256sum: 628b73f278d1f858a581a354e77501a01b28217c055e2578ceea8c82efcd6943
+Description:  LEDE Traffic Usage Monitor
+
+Package: noddos
+Version: 0.5.5-4
+Depends: libc, libstdcpp, libnetfilter-conntrack, libcurl4, libopenssl1.1, openssl-util, ca-bundle, wget, bzip2, libtins, ipset, libpthread, libyaml-cpp
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 204891
+Filename: noddos_0.5.5-4_x86_64.ipk
+Size: 206110
+SHA256sum: 8e61ff16e9f492ee4e819971adeb6dd14ec8e2754f95ea1abc405dd8ee6aae37
+Description:  Noddos discovers what devices you have in your network and tailors the firewall rules based on whitelisted flows for that device. Noddos downloads the firewall rules periodically from the cloud. In order to support creating these firewall rules, noddos can, after opt-in, upload anonimized traffic statistics for each device to the cloud. The Luci interface is available in the luci-apps-noddos package. For information, visit https://www.noddos.io/
+
+Package: ntfs-3g
+Version: 2017.3.23-1-fuseint
+Depends: libc, kmod-fuse, libpthread
+License: GPL-2.0 LGPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 182570
+Filename: ntfs-3g_2017.3.23-1-fuseint_x86_64.ipk
+Size: 183753
+SHA256sum: 71b4e14d1d1b1ee8f91cd78249d43bb1cbd30811de8b6e6e899e53b00a63fac4
+Description:  Ntfs-3g is a NTFS driver, which can create, remove, rename,
+ move files, directories, hard links, and streams. It can read
+ and write files, including streams and sparse files. It can
+ handle special files like symbolic links, devices, and FIFOs.
+ Moreover it can also read transparently compressed files.
+ 
+ Contains:
+ - ntfs-3g
+ - ntfs-3g.probe
+ - mount.ntfs-3g (symlink to ntfs-3g)
+ 
+
+Package: ntpclient
+Version: 2010_365-1
+Depends: libc, librt
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 11041
+Filename: ntpclient_2010_365-1_x86_64.ipk
+Size: 11821
+SHA256sum: d17968fcbfa475ed10447b17d102485a1559705f405d2e66dfa5c5249003e908
+Description:  NTP client for setting system time from NTP servers.
+
+Package: ocserv
+Version: 0.12.6-1
+Depends: libc, libhttp-parser, libgnutls, certtool, libncurses6, libreadline8, libprotobuf-c, libev, kmod-tun
+License: GPLv2+
+Section: net
+Architecture: x86_64
+Installed-Size: 183284
+Filename: ocserv_0.12.6-1_x86_64.ipk
+Size: 184127
+SHA256sum: 138419ada0f27412f09a2d3e3d9c9ed8116a25825abe5426c8a914aac22db698
+Description:  OpenConnect server (ocserv) is an SSL VPN server. Its purpose is to be
+ a secure, small, fast and configurable VPN server. It implements the
+ OpenConnect SSL VPN protocol, and has also (currently experimental)
+ compatibility with clients using the AnyConnect SSL VPN protocol. The
+ OpenConnect VPN protocol uses the standard IETF security protocols such
+ as TLS 1.2, and Datagram TLS to provide the secure VPN service.
+
+Package: openconnect
+Version: 7.08-8
+Depends: libc, libxml2, kmod-tun, resolveip, vpnc-scripts, libgnutls
+License: LGPLv2.1+
+Section: net
+Architecture: x86_64
+Installed-Size: 92291
+Filename: openconnect_7.08-8_x86_64.ipk
+Size: 93350
+SHA256sum: cd86d47abac25ff70c6e37d3609eef7082320af570efe6d4ccf0a260c86ffadc
+Description:  A VPN client compatible with Cisco's AnyConnect SSL VPN, ocserv and Juniper (Pulse secure).
+ 
+ OpenConnect is a client that follows the Cisco's AnyConnect SSL VPN protocol,
+ which is supported by IOS 12.4(9)T or later on Cisco SR500, 870, 880, 1800,
+ 2800, 3800, 7200 Series and Cisco 7301 Routers, as well as the OpenConnect
+ VPN server. It has later been ported to support the Juniper SSL VPN which
+ is now known as Pulse Connect Secure.
+
+Package: openssh-sftp-client
+Version: 8.0p1-2
+Depends: libc, libopenssl1.1, zlib
+License: BSD ISC
+Section: net
+Architecture: x86_64
+Installed-Size: 58013
+Filename: openssh-sftp-client_8.0p1-2_x86_64.ipk
+Size: 58886
+SHA256sum: 76b63d73f10108f84375311e02f4d0c223790cf4a4c406a7a6a75349e81d4d86
+Description:  OpenSSH SFTP client.
+
+Package: p910nd
+Version: 0.97-5
+Depends: libc
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 5730
+Filename: p910nd_0.97-5_x86_64.ipk
+Size: 6681
+SHA256sum: b8f7e77e1ef716834eee2d9077cdfc4b93861f8c79e31ede955dea761b76dd8c
+Description:  p910nd is a small daemon that copies any data received on
+ the port it is listening on to the corresponding printer
+ port. It is primarily intended for diskless Linux hosts
+ running as printer drivers but there is no reason why it
+ could not be used on diskful hosts. Port 9100 is copied
+ to /dev/lp0, 9101 to /dev/lp1 and 9102 to /dev/lp2. The
+ default is port 9100 to /dev/lp0.
+
+Package: pagekitec
+Version: 0.91.171102C-1
+Depends: libc, libpagekite
+License: Apache-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 4419
+Filename: pagekitec_0.91.171102C-1_x86_64.ipk
+Size: 5524
+SHA256sum: 14fc2207c86f0de2f4923559759de51eaf8edea01c53ff2f51be416c7e0b1a56
+Description:  PageKite is a system for running publicly visible servers (generally
+ web servers) on machines without a direct connection to the Internet,
+ such as mobile devices or computers behind restrictive firewalls.
+ PageKite works around NAT, firewalls and IP-address limitations by
+ using a combination of tunnels and reverse proxies.
+ 
+ This package provides an implementation of the PageKite Protocol in C,
+ optimized for high-performance or embedded applications.
+ 
+ 
+ This package contains a basic backend useful for exposing http/ssh servers.
+ 
+ Basic UCI support for configuring this backend is also included.
+
+Package: pciutils
+Version: 3.5.6-1
+Depends: libc, libkmod, zlib
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 318760
+Filename: pciutils_3.5.6-1_x86_64.ipk
+Size: 319716
+SHA256sum: 28b4c9885b695133ff1372fc593101c6bf4817e537d10e7bc7ace5f915839b69
+Description:  contains collection of programs for inspecting and manipulating configuration
+ of PCI devices
+
+Package: perl-text-csv_xs
+Version: 1.35+perl5.28-1
+Depends: libc, perl, perlbase-essential, perlbase-config, perlbase-io, perlbase-dynaloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 35231
+Filename: perl-text-csv_xs_1.35+perl5.28-1_x86_64.ipk
+Size: 36130
+SHA256sum: 3eb864e493a30bb93eb80f24efeb6699ad8b5ea00e8c976cab5b8eebe5483abd
+Description:  Text comma-separated values manipulation routines
+
+Package: perl
+Version: 5.28.0-1
+Depends: libc, libpthread
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1130422
+Filename: perl_5.28.0-1_x86_64.ipk
+Size: 1119464
+SHA256sum: de18c3920cb174b5888e716bf2261d6a8e5cdfac92290c77231b369477499e90
+Description:  Perl is a stable, cross platform programming language.
+ It is used for mission critical projects in the public and private sectors
+ and is widely used to program web applications of all needs.
+
+Package: perlbase-autoloader
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 2253
+Filename: perlbase-autoloader_5.28.0-1_x86_64.ipk
+Size: 3075
+SHA256sum: 6e430507b19108ca646596d5956b248fd9e58c11dc73f39a16a3d5cd2a233e34
+Description:  AutoLoader perl module
+
+Package: perlbase-autouse
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1088
+Filename: perlbase-autouse_5.28.0-1_x86_64.ipk
+Size: 1880
+SHA256sum: 570f276337756b26c050b4a869ba026bd1932e6a6b0cbe9783006c5d2d147deb
+Description:  autouse perl module
+
+Package: perlbase-base
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 3551
+Filename: perlbase-base_5.28.0-1_x86_64.ipk
+Size: 4337
+SHA256sum: ef17f0d20698c337bfdda533eecb0189c2c0d7dc77e8bd56443945fa1a366e30
+Description:  base perl module
+
+Package: perlbase-bytes
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 626
+Filename: perlbase-bytes_5.28.0-1_x86_64.ipk
+Size: 1422
+SHA256sum: bdcd865bd4d8049cdf534d9fce7763ba4fc74ea0c23efce9fc4f8fb437c66e05
+Description:  bytes perl module
+
+Package: perlbase-class
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 2260
+Filename: perlbase-class_5.28.0-1_x86_64.ipk
+Size: 3051
+SHA256sum: 1fd1d14b65d32058f29f96ae3eb21dcf1e4be852594d5cbeec742665531672bc
+Description:  Class perl module
+
+Package: perlbase-config
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 17408
+Filename: perlbase-config_5.28.0-1_x86_64.ipk
+Size: 18187
+SHA256sum: 4906f2fce472f0762072acbf2ef2213f2af33dfda4630c450fa27d805f799214
+Description:  Config perl module
+
+Package: perlbase-cwd
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 10545
+Filename: perlbase-cwd_5.28.0-1_x86_64.ipk
+Size: 11341
+SHA256sum: 10491ca00354201e35923527b032352f01987bfb7d937cfb0ef9696307ce0c6a
+Description:  Cwd perl module
+
+Package: perlbase-digest
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-dynaloader, perlbase-essential, perlbase-fcntl, perlbase-integer
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 30511
+Filename: perlbase-digest_5.28.0-1_x86_64.ipk
+Size: 31254
+SHA256sum: 2d6b851c30f30137758b0684a3933b9de138eb6dd57463520cf54972cdb15ad8
+Description:  Digest perl module
+
+Package: perlbase-dynaloader
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-config
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 3691
+Filename: perlbase-dynaloader_5.28.0-1_x86_64.ipk
+Size: 4481
+SHA256sum: 8044cd2918cfee3c6c7027d6ca9ddbd67b500e3de7a4bab71d138f7ff8ad7e0e
+Description:  DynaLoader perl module
+
+Package: perlbase-errno
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-config, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 2439
+Filename: perlbase-errno_5.28.0-1_x86_64.ipk
+Size: 3265
+SHA256sum: 654ad383e0b2b4f9bac32889cb6c7668e59612665e94015790d6bc3320cbe3f8
+Description:  Errno perl module
+
+Package: perlbase-essential
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-config
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 22471
+Filename: perlbase-essential_5.28.0-1_x86_64.ipk
+Size: 23271
+SHA256sum: 5706c20d1bce4fdd30da506309184cba2518352ff9e91d9482702662b28785ba
+Description:  essential perl module
+
+Package: perlbase-fcntl
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 6400
+Filename: perlbase-fcntl_5.28.0-1_x86_64.ipk
+Size: 7222
+SHA256sum: 61c27af2b89c2b601512525e42900a4125ee5533167ac289011035456cfd0231
+Description:  Fcntl perl module
+
+Package: perlbase-file
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-class, perlbase-config, perlbase-cwd, perlbase-errno, perlbase-essential, perlbase-fcntl, perlbase-filehandle, perlbase-io, perlbase-locale, perlbase-params, perlbase-scalar, perlbase-symbol, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 72202
+Filename: perlbase-file_5.28.0-1_x86_64.ipk
+Size: 73168
+SHA256sum: 6e38347c684753364adbbc95ae1842132df6f978467ed18c5479ad9e6108d183
+Description:  File perl module
+
+Package: perlbase-filehandle
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-io
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1008
+Filename: perlbase-filehandle_5.28.0-1_x86_64.ipk
+Size: 1824
+SHA256sum: 87344d212bb9011a53a91e4161bd3eb74855e46890780fceea8fa1db8917e237
+Description:  FileHandle perl module
+
+Package: perlbase-findbin
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-cwd, perlbase-essential, perlbase-file
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1143
+Filename: perlbase-findbin_5.28.0-1_x86_64.ipk
+Size: 1961
+SHA256sum: d600ed5daa4952921672b0bf6cf309c776f179a7fda88f79330089c935617562
+Description:  FindBin perl module
+
+Package: perlbase-getopt
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 13229
+Filename: perlbase-getopt_5.28.0-1_x86_64.ipk
+Size: 14042
+SHA256sum: 8b361a3287059df43df52bd2030991835cf5ab44c6cd9510f2ca99c325255c95
+Description:  Getopt perl module
+
+Package: perlbase-hash
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-scalar, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 14945
+Filename: perlbase-hash_5.28.0-1_x86_64.ipk
+Size: 15716
+SHA256sum: dc480f2abcd868ac5a39e9d88fec9a9c58455c0366f9505045da0adff11356d0
+Description:  Hash perl module
+
+Package: perlbase-i18n
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-posix, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 20079
+Filename: perlbase-i18n_5.28.0-1_x86_64.ipk
+Size: 20909
+SHA256sum: 6eaf919fb063aea7bfa39e5c9be69ecd425976a2e25742fe0ab659539ea56bec
+Description:  I18N perl module
+
+Package: perlbase-integer
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 314
+Filename: perlbase-integer_5.28.0-1_x86_64.ipk
+Size: 1101
+SHA256sum: 1479a112e31df88606f72ee8539ebc7e8b5820bb680e84b7f04f188847904567
+Description:  integer perl module
+
+Package: perlbase-io
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-base, perlbase-bytes, perlbase-config, perlbase-errno, perlbase-essential, perlbase-fcntl, perlbase-list, perlbase-posix, perlbase-scalar, perlbase-selectsaver, perlbase-socket, perlbase-symbol, perlbase-tie, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 67732
+Filename: perlbase-io_5.28.0-1_x86_64.ipk
+Size: 68750
+SHA256sum: 6651b514f154c4d56bd4fc52493d9bcbdd0eaa3ff304fba3904faaea66bd7e90
+Description:  IO perl module
+
+Package: perlbase-list
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 19342
+Filename: perlbase-list_5.28.0-1_x86_64.ipk
+Size: 20173
+SHA256sum: 7dc968b9dbea2c56e47acc874cd471b037d16f659eb7c759f745113795f8b6e6
+Description:  List perl module
+
+Package: perlbase-locale
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-i18n, perlbase-integer, perlbase-utf8
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 337529
+Filename: perlbase-locale_5.28.0-1_x86_64.ipk
+Size: 310037
+SHA256sum: a277aaff65cc0b9bd192f82508cfb48c15efd2659d58953c4a6030aa76f6a2dc
+Description:  Locale perl module
+
+Package: perlbase-params
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-locale
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 3284
+Filename: perlbase-params_5.28.0-1_x86_64.ipk
+Size: 4076
+SHA256sum: 48dc7b9ab9e3daaf15a4df998f55c86fc290dcbbde6d60a937271a706d727789
+Description:  Params perl module
+
+Package: perlbase-posix
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-fcntl, perlbase-tie, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 40052
+Filename: perlbase-posix_5.28.0-1_x86_64.ipk
+Size: 40889
+SHA256sum: a4f5d5c7767b16bfa352c6e19a5124f0b6864a590c58a943255d42c95f039a65
+Description:  POSIX perl module
+
+Package: perlbase-re
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 227713
+Filename: perlbase-re_5.28.0-1_x86_64.ipk
+Size: 228584
+SHA256sum: 062c4195b766daadf3bd876125ddd88a4d3cc71a9493a36b0541094544d0c84d
+Description:  re perl module
+
+Package: perlbase-scalar
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-list
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 997
+Filename: perlbase-scalar_5.28.0-1_x86_64.ipk
+Size: 1793
+SHA256sum: fa8772f171b2fb5b50c1a020dc351f8f10d7548751751c2763959905fcc9639b
+Description:  Scalar perl module
+
+Package: perlbase-selectsaver
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-symbol
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 438
+Filename: perlbase-selectsaver_5.28.0-1_x86_64.ipk
+Size: 1250
+SHA256sum: 6d1571569dde45fb36c0b0891630ac04f44c04e867c94d8a03f773f24ec7fecb
+Description:  SelectSaver perl module
+
+Package: perlbase-socket
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 18248
+Filename: perlbase-socket_5.28.0-1_x86_64.ipk
+Size: 19022
+SHA256sum: 6afeba1809a6f0348aa13ecac356a0011b3cce37b81909f5b07025e85d52fd82
+Description:  Socket perl module
+
+Package: perlbase-symbol
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1117
+Filename: perlbase-symbol_5.28.0-1_x86_64.ipk
+Size: 1915
+SHA256sum: f24a288e8da1d55bf290b512e9c210ab6c0e26d17792e88a178911362ecd676d
+Description:  Symbol perl module
+
+Package: perlbase-tie
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-fcntl, perlbase-xsloader
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 21665
+Filename: perlbase-tie_5.28.0-1_x86_64.ipk
+Size: 22482
+SHA256sum: e58c626c38d3cb9bc035af63bbc40044b2cc1f7a7cec485a2b2fbe47ca7378c5
+Description:  Tie perl module
+
+Package: perlbase-unicore
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 668516
+Filename: perlbase-unicore_5.28.0-1_x86_64.ipk
+Size: 622354
+SHA256sum: 69e96a3be3870f82d032445ca778dfc027c8c4b7dc4bbd0152f964b54ca13853
+Description:  unicore perl module
+
+Package: perlbase-utf8
+Version: 5.28.0-1
+Depends: libc, perl, perlbase-essential, perlbase-re, perlbase-unicore
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 8890
+Filename: perlbase-utf8_5.28.0-1_x86_64.ipk
+Size: 9728
+SHA256sum: ae70f3d672b7790855f55fc1bff483322f372d701118ed978d48dba7ef97f84d
+Description:  utf8 perl module
+
+Package: perlbase-xsloader
+Version: 5.28.0-1
+Depends: libc, perl
+License: GPL-1.0+ Artistic-1.0-Perl
+Section: lang
+Architecture: x86_64
+Installed-Size: 1733
+Filename: perlbase-xsloader_5.28.0-1_x86_64.ipk
+Size: 2543
+SHA256sum: a5e00a09aa95704816310860135a2768684e562bd42cd4eedc8733b80b64ae76
+Description:  XSLoader perl module
+
+Package: php7-fpm
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 1340716
+Filename: php7-fpm_7.2.9-1_x86_64.ipk
+Size: 1338765
+SHA256sum: 9fac17cf5e32415a98aaf4a17060164e8ab3933394ecac4bba287cc622e0376d
+Description:  PHP is a widely-used general-purpose scripting language that is especially
+ suited for Web development and can be embedded into HTML.
+ This package contains the FastCGI Process Manager of the PHP7 interpreter.
+
+Package: php7-mod-curl
+Version: 7.2.9-1
+Depends: libc, php7, libcurl4
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 28472
+Filename: php7-mod-curl_7.2.9-1_x86_64.ipk
+Size: 29239
+SHA256sum: 73e020a7f216dc7e4e8234049e548deed41ab4dbee2a65f0cd3b3caa20e4c63e
+Description:  cURL shared module
+
+Package: php7-mod-gd
+Version: 7.2.9-1
+Depends: libc, php7, libjpeg, libpng, libfreetype
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 101188
+Filename: php7-mod-gd_7.2.9-1_x86_64.ipk
+Size: 101924
+SHA256sum: 150e9edfb77af268f87f797f2a174d973112722d043ecdd6024f8c701cea0681
+Description:  GD graphics shared module
+
+Package: php7-mod-iconv
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 15936
+Filename: php7-mod-iconv_7.2.9-1_x86_64.ipk
+Size: 16649
+SHA256sum: ebbf76072b4f1ff21bd0d600d4083dde462a39a31d8fa46f9790a636ca48b1c2
+Description:  iConv shared module
+
+Package: php7-mod-json
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 15175
+Filename: php7-mod-json_7.2.9-1_x86_64.ipk
+Size: 15880
+SHA256sum: 702a75902061ff7de8a9d79ad4b431bd12002c85818336f733051f3f683f154c
+Description:  JSON shared module
+
+Package: php7-mod-mbstring
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 684178
+Filename: php7-mod-mbstring_7.2.9-1_x86_64.ipk
+Size: 671784
+SHA256sum: b4132a863d99bd9652e409aa698012d9af67aa88573b2abcc9c80d7fefe4f2b6
+Description:  MBString shared module
+
+Package: php7-mod-opcache
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 151976
+Filename: php7-mod-opcache_7.2.9-1_x86_64.ipk
+Size: 152642
+SHA256sum: ecb60bcb190588bf17e987012f8117fa2db0f047e03d3442f018b0e9a00c2385
+Description:  OPcache shared module
+
+Package: php7-mod-session
+Version: 7.2.9-1
+Depends: libc, php7
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 30965
+Filename: php7-mod-session_7.2.9-1_x86_64.ipk
+Size: 31656
+SHA256sum: 27e95724eb3d93276c84c2afdd0e61907d850c76ac1dc6a3ccddad98b85a1b03
+Description:  Session shared module
+
+Package: php7-mod-zip
+Version: 7.2.9-1
+Depends: libc, php7, zlib
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 50375
+Filename: php7-mod-zip_7.2.9-1_x86_64.ipk
+Size: 51194
+SHA256sum: 6414df0fc7a1e8d205cc81007dfc6f3d36998ed3d66a0a79b8ccfece868e8a93
+Description:  ZIP shared module
+
+Package: php7
+Version: 7.2.9-1
+Depends: libc, libpcre, zlib
+License: PHPv3.01
+Section: lang
+Architecture: x86_64
+Installed-Size: 2198
+Filename: php7_7.2.9-1_x86_64.ipk
+Size: 3203
+SHA256sum: 60abf3b910507345e97b6073b98044d6a36e309eaddd51bd64c756d26e0d334c
+Description:  PHP is a widely-used general-purpose scripting language that is especially
+ suited for Web development and can be embedded into HTML.
+ This package contains only the PHP config file. You must actually choose
+ your PHP flavour (cli, cgi or fastcgi).
+ 
+ Please note, that installing php5 and php7 in parallel on the same target
+ is not supported in OpenWrt/LEDE.
+
+Package: polipo
+Version: 1.1.1-2
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 107970
+Filename: polipo_1.1.1-2_x86_64.ipk
+Size: 108892
+SHA256sum: 2180ae442e6bf5e66ad129d351929c3ae975edd8e7bb8a6ba7d4266eaf9b9325
+Description:  Polipo is a small and fast caching web proxy (a web cache, an HTTP proxy,
+ a proxy server). While Polipo was designed to be used by one person or a
+ small group of people, there is nothing that prevents it from being used
+ by a larger group.
+
+Package: pptpd
+Version: 1.4.0-3
+Depends: libc, kmod-ppp, kmod-gre, kmod-mppe, ppp
+Section: net
+Architecture: x86_64
+Installed-Size: 32914
+Filename: pptpd_1.4.0-3_x86_64.ipk
+Size: 33672
+SHA256sum: 41605369ec4335a61c86353a0e475a9997d10f974d06355aabc807388a8bb468
+Description:  PopTop pptp server
+
+Package: privoxy
+Version: 3.0.26-4
+Depends: libc, libpcre, libpthread, zlib
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 197564
+Filename: privoxy_3.0.26-4_x86_64.ipk
+Size: 198374
+SHA256sum: a1d3e090bb0a9fe40ebbb653ce4567abdb35ebde817d4b7aa1924cda3ece504a
+Description:  Privoxy WEB Proxy - Homepage: www.privoxy.org
+
+Package: python-base
+Version: 2.7.17-2
+Depends: libc, libpthread, zlib
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 773691
+Filename: python-base_2.7.17-2_x86_64.ipk
+Size: 771499
+SHA256sum: 01f9e1f8965d1eaeede4855bb90fb68a03ef2ac9edeaa8421c2e2968c769155a
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python-codecs
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 702938
+Filename: python-codecs_2.7.17-2_x86_64.ipk
+Size: 688018
+SHA256sum: 7fa5b938e77ca492493466678c96e87e749831ddd4f6b7293fb9ab03d2bdb98b
+Description:  Python 2.7 codecs + unicode support
+
+Package: python-compiler
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 59805
+Filename: python-compiler_2.7.17-2_x86_64.ipk
+Size: 60774
+SHA256sum: 04bb09880c8c0332ed2de6eb934ebe1556a2309622c66334d2edb43959a2d22b
+Description:  Python 2.7 compiler module
+
+Package: python-ctypes
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 66158
+Filename: python-ctypes_2.7.17-2_x86_64.ipk
+Size: 67031
+SHA256sum: 38b8c7008e52e6d0a5054772bf5456a27dfda2920ea10caa5cd6d122c8ac5906
+Description:  Python 2.7 ctypes module
+
+Package: python-db
+Version: 2.7.17-2
+Depends: libc, python-light, libdb47
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 75812
+Filename: python-db_2.7.17-2_x86_64.ipk
+Size: 76483
+SHA256sum: 642e81c6779be4292f43f1a8b33f7c705340d44d7e8460cf9a18f72bf6320be2
+Description:  Python 2.7 db module
+
+Package: python-decimal
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 48932
+Filename: python-decimal_2.7.17-2_x86_64.ipk
+Size: 49837
+SHA256sum: a0ff103161dcd4473512e6ba537f4ac07440cf4bdeb4f6162188edab93bef9b1
+Description:  Python 2.7 decimal module
+
+Package: python-distutils
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 174733
+Filename: python-distutils_2.7.17-2_x86_64.ipk
+Size: 175724
+SHA256sum: 00235105e4a79595190d654fc80acc449de4a50ec1d59286c2777cac75a9a89e
+Description:  Python 2.7 distutils
+
+Package: python-email
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 50266
+Filename: python-email_2.7.17-2_x86_64.ipk
+Size: 51164
+SHA256sum: f56d6ad7cd75b7bce14f4ff8c18984cc99d5bffac3c9468821cb1d60061ead7d
+Description:  Python 2.7 email module
+
+Package: python-gdbm
+Version: 2.7.17-2
+Depends: libc, python-light, libgdbm
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 5634
+Filename: python-gdbm_2.7.17-2_x86_64.ipk
+Size: 6461
+SHA256sum: d1683452de0529ab8442d9198789acc019c39418e95e58e43d2fc86b707e710e
+Description:  Python 2.7 gdbm module
+
+Package: python-light
+Version: 2.7.17-2
+Depends: libc, python-base, libffi, libbz2
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 1462071
+Filename: python-light_2.7.17-2_x86_64.ipk
+Size: 1461901
+SHA256sum: e18e8a0089c9e4a1aafd38fd3fa542004dafc74c408ded97accc9d37b0c4d854
+Description:  This package is essentially the python-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python-logging
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 42709
+Filename: python-logging_2.7.17-2_x86_64.ipk
+Size: 43637
+SHA256sum: 90c87c5d0eec2ebe762ded2379e6839a42451ef3707f22ccec0d56f9653312fe
+Description:  Python 2.7 logging module
+
+Package: python-multiprocessing
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 65192
+Filename: python-multiprocessing_2.7.17-2_x86_64.ipk
+Size: 66030
+SHA256sum: 8593be3b0d47be7737e54e132a29c8578d251c2ac84ee49623e887d983a2ca53
+Description:  Python 2.7 multiprocessing
+
+Package: python-ncurses
+Version: 2.7.17-2
+Depends: libc, python-light, libncurses6
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 34018
+Filename: python-ncurses_2.7.17-2_x86_64.ipk
+Size: 34765
+SHA256sum: de541e4211286d51f6459356544b0fb446d4073c5ab3e86c8e1b6f335926bdb3
+Description:  Python 2.7 ncurses module
+
+Package: python-openssl
+Version: 2.7.17-2
+Depends: libc, python-light, libopenssl1.1
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 36003
+Filename: python-openssl_2.7.17-2_x86_64.ipk
+Size: 36782
+SHA256sum: e82cba4510e9c7c7e1e157faa44478710d30c3e68bbd651264dc03a53aed3b76
+Description:  Python 2.7 SSL module
+
+Package: python-pydoc
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 183039
+Filename: python-pydoc_2.7.17-2_x86_64.ipk
+Size: 183775
+SHA256sum: 9ce9bfbbbe7ce3efe7f4ae15d8df95ec19a33899c2d1a41233bde22a4e7058b2
+Description:  Python 2.7 pydoc module
+
+Package: python-sqlite3
+Version: 2.7.17-2
+Depends: libc, python-light, libsqlite3
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 28442
+Filename: python-sqlite3_2.7.17-2_x86_64.ipk
+Size: 29272
+SHA256sum: 41df82809acf77db3492910af40005c22dbd35f9d73b1fde081afe981fd20633
+Description:  Python 2.7 sqlite3 module
+
+Package: python-unittest
+Version: 2.7.17-2
+Depends: libc, python-light
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 33401
+Filename: python-unittest_2.7.17-2_x86_64.ipk
+Size: 34318
+SHA256sum: e4c1a3daf6fa7676c3e248aa90a688c3bca716a5b93621e813c0e2a38c712869
+Description:  Python 2.7 unittest module
+
+Package: python-xml
+Version: 2.7.17-2
+Depends: libc, python-light, libexpat
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 184699
+Filename: python-xml_2.7.17-2_x86_64.ipk
+Size: 185520
+SHA256sum: 0b7c456af5086c5ae7b4b95fe4194cfb8021b34d847b9813b8b4eae9796dfd48
+Description:  Python 2.7 xml libs
+
+Package: python
+Version: 2.7.17-2
+Depends: libc, python-light, python-ctypes, python-pydoc, python-multiprocessing, python-logging, python-codecs, python-sqlite3, python-gdbm, python-email, python-distutils, python-xml, python-compiler, python-db, python-openssl, python-decimal, python-unittest, python-ncurses
+License: Python/2.0
+Section: lang
+Architecture: x86_64
+Installed-Size: 105
+Filename: python_2.7.17-2_x86_64.ipk
+Size: 1063
+SHA256sum: 58830da4b08237f510ffacfa6fd165db58008a3e2ed48c3e5b1799d2a5f7b8df
+Description:  This package contains the (almost) full Python install.
+ It's python-light + all other packages.
+
+Package: qrencode
+Version: 4.0.0-1
+Depends: libc, libqrencode
+License: LGPL-2.1+
+Section: utils
+Architecture: x86_64
+Installed-Size: 9592
+Filename: qrencode_4.0.0-1_x86_64.ipk
+Size: 10490
+SHA256sum: 42886e73d939176bcd301b4c6bc4eaeb19c716a5920cc65937a4f156303499a1
+Description:  Qrencode is a C program for encoding data in a QR Code symbol,
+ a kind of 2D symbology that can be scanned by handy terminals such
+ as a mobile phone with CCD. The capacity of QR Code is up to 7000
+ digits or 4000 characters, and is highly robust.
+
+Package: rp-pppoe-common
+Version: 3.12-4
+Depends: libc, ppp
+License: LGPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 401
+Filename: rp-pppoe-common_3.12-4_x86_64.ipk
+Size: 1265
+SHA256sum: 8814c7fbfdc525613f0c16fd30c10eda4b0f55cdbb55b606b9bb91d7598251ff
+Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
+ a DSL "modem" whose Internet service provider uses PPPoE.
+ 
+ This package contains files common to server and relay.
+
+Package: rp-pppoe-relay
+Version: 3.12-4
+Depends: libc, rp-pppoe-common
+License: LGPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 12975
+Filename: rp-pppoe-relay_3.12-4_x86_64.ipk
+Size: 13785
+SHA256sum: 87202a44e56ec32a6254522c48a4e281885a6553b159ffec4f017a8737665f41
+Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
+ a DSL "modem" whose Internet service provider uses PPPoE.
+ 
+ This package contains pppoe-relay.
+
+Package: rp-pppoe-server
+Version: 3.12-4
+Depends: libc, rp-pppoe-common, ppp-mod-pppoe
+License: LGPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 23561
+Filename: rp-pppoe-server_3.12-4_x86_64.ipk
+Size: 24406
+SHA256sum: d3b95ca876beee1918b60adb7c1f9d41bdbacc2737e1c30ea251f8ec6e645c3e
+Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
+ a DSL "modem" whose Internet service provider uses PPPoE.
+ 
+ This package contains pppoe-server.
+
+Package: rpcbind
+Version: 1.2.5-4
+Depends: libc, libtirpc, libwrap
+License: BSD-3-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 27691
+Filename: rpcbind_1.2.5-4_x86_64.ipk
+Size: 28623
+SHA256sum: 33c9ff9796faaf6d8190d146aced34a38209a5167bd3bdc8f6abb9f8f164c833
+Description:  The rpcbind utility is a server that converts RPC program numbers into universal addresses.
+ It must be running on the host to be able to make RPC calls on a server on that machine.
+ 
+ Rpcbind replaces portmap for NFS v2/v3. It has more features, like ipv6 support.
+ Note: Nfs4 only configurations can run without it.
+
+Package: rpcd-mod-lxc
+Version: 20171206
+Depends: libc, rpcd, liblxc
+License: ISC
+Section: libs
+Architecture: x86_64
+Installed-Size: 3435
+Filename: rpcd-mod-lxc_20171206_x86_64.ipk
+Size: 4162
+SHA256sum: 45d4b4e7e37316da3696ad027e833d638e4fc78e0038a6d1ee2f7476ac52174e
+Description:  LXC rpcd module
+
+Package: rrdtool1
+Version: 1.0.50-2
+Depends: libc, librrd1
+Section: utils
+Architecture: x86_64
+Installed-Size: 10159
+Filename: rrdtool1_1.0.50-2_x86_64.ipk
+Size: 11278
+SHA256sum: d630cdcf3b0b81a1695f978b9ce19e3aa157d8d8d4f1a1fabd67d6cf81168fbd
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains command line tools used to manage RRDs.
+
+Package: runc
+Version: 1.0.0-rc8+91-3e425f80-1
+Depends: libc
+License: Apache-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 3059998
+Filename: runc_1.0.0-rc8+91-3e425f80-1_x86_64.ipk
+Size: 3031390
+SHA256sum: 061fca833a04a8593d7f876dc5bcb8f8b5340d2a9a311fac7180f5093ce8becf
+Description:  runc is a CLI tool for spawning and running containers according to the OCI specification.
+
+Package: shadowsocks-libev-ss-local
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libpcre
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 51333
+Filename: shadowsocks-libev-ss-local_3.3.4-1_x86_64.ipk
+Size: 52206
+SHA256sum: f9ebfbc20bc74e349ab533b423914f65f5da20be02dbedacb4078f8816de3ace
+Description:  shadowsocks-libev ss-local
+
+Package: shadowsocks-libev-ss-redir
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 44010
+Filename: shadowsocks-libev-ss-redir_3.3.4-1_x86_64.ipk
+Size: 44817
+SHA256sum: dca4e4109fa3033a1295d370ced545544d354d7868679faec4e6fdb23ef7fc3a
+Description:  shadowsocks-libev ss-redir
+
+Package: shadowsocks-libev-ss-rules
+Version: 3.3.4-1
+Depends: libc, ip, ipset, iptables-mod-tproxy, resolveip, shadowsocks-libev-ss-redir
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 3258
+Filename: shadowsocks-libev-ss-rules_3.3.4-1_x86_64.ipk
+Size: 4138
+SHA256sum: a720b5abdefabeea71a8d3d77763cd2acd755e6c210cc123bff14e516cd39a02
+Description:  shadowsocks-libev ss-rules
+
+Package: shadowsocks-libev-ss-server
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libcares, libpcre
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 54864
+Filename: shadowsocks-libev-ss-server_3.3.4-1_x86_64.ipk
+Size: 55715
+SHA256sum: 12625777973a4e41e4cc4bda22b385167d612c74ae8c226f4526f9ac51172d1b
+Description:  shadowsocks-libev ss-server
+
+Package: shadowsocks-libev-ss-tunnel
+Version: 3.3.4-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 42556
+Filename: shadowsocks-libev-ss-tunnel_3.3.4-1_x86_64.ipk
+Size: 43429
+SHA256sum: e985c3882729ff0f47b9b950c4eda1b6475ecd053c6ddf52a0259a1e4a3d5b81
+Description:  shadowsocks-libev ss-tunnel
+
+Package: shairplay
+Version: 2016-01-01-1
+Depends: libc, libao, libavahi-compat-libdnssd, libltdl, libpthread
+License: MIT
+Section: sound
+Architecture: x86_64
+Installed-Size: 45945
+Filename: shairplay_2016-01-01-1_x86_64.ipk
+Size: 46828
+SHA256sum: 44d136c65f136c9cf55e32354c21ca890c624d306d4c0e900e603795685c51c6
+Description:  Free portable AirPlay server implementation similar to ShairPort.
+
+Package: shairport-sync-openssl
+Version: 3.3.6-2
+Depends: libc, libpthread, alsa-lib, libconfig, libdaemon, libpopt, libalac, libopenssl1.1, libavahi-client, libsoxr
+Provides: shairport-sync
+License: MIT
+Section: sound
+Architecture: x86_64
+Installed-Size: 88141
+Filename: shairport-sync-openssl_3.3.6-2_x86_64.ipk
+Size: 89331
+SHA256sum: b26814070852b6cf4227bbcb0a5cf4d3b27b5733fb9a81e7e0334a0fd38c64ff
+Description:  Shairport Sync plays audio from iTunes and AirPlay sources, including
+ iOS devices, Quicktime Player and third party sources such as forkedDaapd.
+ Audio played by a Shairport Sync-powered device stays synchronised with the source
+ and hence with similar devices playing the same source.
+ 
+ Shairport Sync does not support AirPlay video or photo streaming.
+ Ensure Kernel Modules > Sound Support > kmod-sound-core is selected.
+ Also select kmod-usb-audio if you want to use USB-connected sound cards.
+
+Package: shorewall-core
+Version: 5.2.0.4-1
+Depends: libc
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 34932
+Filename: shorewall-core_5.2.0.4-1_x86_64.ipk
+Size: 35887
+SHA256sum: fa119487bce16f63186248d66d25ff0142a5da4f29e2f1cbf3fcfc1027153f3f
+Description:  The Shoreline Firewall, is high-level tool for configuring Netfilter.
+ This package provides the core Shorewall libraries installed in /usr/share/shorewall/,
+ which are required for the rest of the Shorewall packages to work.
+
+Package: shorewall-lite
+Version: 5.2.0.4-1
+Depends: libc, ip, iptables, shorewall-core
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 4506
+Filename: shorewall-lite_5.2.0.4-1_x86_64.ipk
+Size: 5525
+SHA256sum: d26bd3c45c6c6767b9daa3096d4d86a61f27bed6afd991a68b6cfef6db6e8810
+Description:  The Shoreline Firewall, is high-level tool for configuring Netfilter.
+ 
+ Shorewall allows for central administration of multiple IPv4 firewalls
+ through use of Shorewall lite. The full Shorewall product is installed
+ on a central administrative system where compiled Shorewall scripts are
+ generated. These scripts are copied to the firewall systems where they
+ run under the control of Shorewall-lite.
+ 
+ Note: This is the IPv4 implementation of Shorewall.
+
+Package: shorewall6-lite
+Version: 5.2.0.4-1
+Depends: libc, ip, ip6tables, shorewall-core
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 4242
+Filename: shorewall6-lite_5.2.0.4-1_x86_64.ipk
+Size: 5271
+SHA256sum: 0798ec05010d0bfc544d63b0beeac2faa8dd8f3a5cbd7bb82ca26641af72a178
+Description:  The Shoreline Firewall, is high-level tool for configuring Netfilter.
+ 
+ Shorewall6 allows for central administration of multiple IPv6 firewalls
+ through use of Shorewall6 lite. The full Shorewall6 product is installed
+ on a central administrative system where compiled Shorewall6 scripts are
+ generated. These scripts are copied to the firewall systems where they
+ run under the control of Shorewall6-lite.
+ 
+ Note: This is the IPv6 implementation of Shorewall.
+
+Package: shorewall6
+Version: 5.2.0.4-1
+Depends: libc, ip, ip6tables, kmod-ipt-hashlimit, kmod-ipt-raw6, iptables-mod-hashlimit, shorewall-core, perl, perlbase-autoloader, perlbase-autouse, perlbase-dynaloader, perlbase-digest, perlbase-findbin, perlbase-getopt, perlbase-hash
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 93145
+Filename: shorewall6_5.2.0.4-1_x86_64.ipk
+Size: 94574
+SHA256sum: be042c36fb057b3702281fe9c3456fe3d13375d662ca4c47f9214cb342f76be5
+Description:  The Shoreline Firewall, is high-level tool for configuring Netfilter.
+ 
+ Shorewall allows for central administration of multiple IPv6 firewalls.
+ This is the full Shorewall product which will compile Shorewall scripts
+ It is not recommended to run it on a low memory system.
+ 
+ Note: This is the IPv6 implementation of Shorewall.
+ This full Shorewal packages also installs Perl which can make the image big (about +2M).
+
+Package: shorewall
+Version: 5.2.0.4-1
+Depends: libc, ip, iptables, kmod-ipt-hashlimit, kmod-ipt-raw, iptables-mod-hashlimit, shorewall-core, perl, perlbase-autoloader, perlbase-autouse, perlbase-dynaloader, perlbase-digest, perlbase-findbin, perlbase-getopt, perlbase-hash
+License: GPL-2.0+
+Section: devel
+Architecture: x86_64
+Installed-Size: 413051
+Filename: shorewall_5.2.0.4-1_x86_64.ipk
+Size: 414139
+SHA256sum: 5201f329cd467290aa6e52a1d1948752a397dbd4250d744be138b4136847be9e
+Description:  The Shoreline Firewall, is high-level tool for configuring Netfilter.
+ 
+ Shorewall allows for central administration of multiple IPv4 firewalls.
+ This is the full Shorewall product which will compile Shorewall scripts.
+ It is not recommended to run it on a low memory system.
+ 
+ Note: This is the IPv4 implementation of Shorewall.
+ This full Shorewal packages also installs Perl which can make the image big (about +2M).
+
+Package: simple-adblock
+Version: 1.6.3-5
+Depends: libc
+License: GPL-3.0+
+Section: net
+Architecture: all
+Installed-Size: 5440
+Filename: simple-adblock_1.6.3-5_all.ipk
+Size: 6507
+SHA256sum: 032321ae21a65e05c5ac6f4c06d4aade3c3882a17694fcfaafce56376aa4fe4b
+Description:  This service provides dnsmasq-based ad blocking.
+ Please see the README for further information.
+ 
+
+Package: smartmontools
+Version: 7.0-3
+Depends: libc, uclibcxx
+License: GPL-2.0-or-later
+Section: utils
+Architecture: x86_64
+Installed-Size: 182950
+Filename: smartmontools_7.0-3_x86_64.ipk
+Size: 183972
+SHA256sum: 6f2b13023280770e494321860c9c78e1974082d341194af9c733e9ed4dbc052f
+Description:  smartmontools contains utility programs (smartctl) to
+ control/monitor storage systems using the Self-Monitoring, Analysis
+ and Reporting Technology System (S.M.A.R.T.) built into most modern
+ ATA and SCSI disks. It is derived from smartsuite.
+
+Package: snort
+Version: 2.9.11.1-5
+Depends: libc, libdaq, libdnet, libnghttp2-14, libopenssl1.1, libpcap, libpcre, libpthread, libuuid, zlib
+License: GPL-2.0
+Section: net
+Architecture: x86_64
+Installed-Size: 981306
+Filename: snort_2.9.11.1-5_x86_64.ipk
+Size: 976538
+SHA256sum: 6e326d104d2e3ac50685898363d56d5eebdc3224892dd9c6db35b49bc65a3b8f
+Description:  Snort is an open source network intrusion detection and prevention system.
+ It is capable of performing real-time traffic analysis, alerting, blocking
+ and packet logging on IP networks.  It utilizes a combination of protocol
+ analysis and pattern matching in order to detect anomalies, misuse and
+ attacks.
+
+Package: socat
+Version: 1.7.3.2-3
+Depends: libc, libpthread, librt
+License: GPL-2.0 OpenSSL
+Section: net
+Architecture: x86_64
+Installed-Size: 97903
+Filename: socat_1.7.3.2-3_x86_64.ipk
+Size: 98839
+SHA256sum: 0754877d3bd6e70c7883515612982313ddb7b6cebf2c0a27d901f46d368c1b68
+Description:  SoCat (for SOcket CAT) establishes two bidirectional byte streams and
+ transfers data between them.
+ Data channels may be files, pipes, devices (terminal or modem, etc.), or
+ sockets (Unix, IPv4, IPv6, raw, UDP, TCP, SSL). It provides forking,
+ logging and tracing, different modes for interprocess communication and
+ many more options.
+
+Package: sqlite3-cli
+Version: 3230100-1
+Depends: libc, libsqlite3, libncurses6, libreadline8
+License: PUBLICDOMAIN
+Section: utils
+Architecture: x86_64
+Installed-Size: 75545
+Filename: sqlite3-cli_3230100-1_x86_64.ipk
+Size: 76571
+SHA256sum: a95119429b4d93b9918a0caa1d2350fedecf837f72d19487e36bd0e34fc169ef
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.
+
+Package: sqm-scripts-extra
+Version: 2016-06-08-1
+Depends: libc, sqm-scripts
+License: GPLv2
+Section: net
+Architecture: all
+Installed-Size: 2256
+Filename: sqm-scripts-extra_2016-06-08-1_all.ipk
+Size: 3113
+SHA256sum: 0103eba911f595c9666d09a52e4074d704a7e34f2b9052aa0b5f31e561b62cee
+Description:  A set of experimental scripts for sqm-scripts QoS package. The contents of this package may
+ change as new qdiscs like 'cake' are developed and tested.
+
+Package: sqm-scripts
+Version: 1.4.0-2
+Depends: libc, tc, kmod-sched-core, kmod-sched-cake, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
+License: GPLv2
+Section: net
+Architecture: all
+Installed-Size: 17902
+Filename: sqm-scripts_1.4.0-2_all.ipk
+Size: 18777
+SHA256sum: 825ae5df4ba2388d3e52c73faad2c5c22a52ec5ec69b6caeac68e507fc68de6a
+Description:  A set of scripts that does simple SQM configuration.
+
+Package: squid
+Version: 4.6-2
+Depends: libc, libpthread, librt, libltdl, libstdcpp, libatomic, libopenssl1.1
+License: GPL-2.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 2063767
+Filename: squid_4.6-2_x86_64.ipk
+Size: 2062462
+SHA256sum: 2af650fca7544f7b3cd56626c182fd5d55a33253e6d077e992ff23eaa82b74d4
+Description:  Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more.
+ It reduces bandwidth and improves response times by caching and reusing
+ frequently-requested web pages.
+
+Package: strongswan-charon
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 228786
+Filename: strongswan-charon_5.6.3-2_x86_64.ipk
+Size: 229603
+SHA256sum: 55269c7dc0120df07d5e4811d6baaf1b820850a61854f7b1b41d73a969342143
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains charon, an IKEv2 keying daemon.
+
+Package: strongswan-ipsec
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2864
+Filename: strongswan-ipsec_5.6.3-2_x86_64.ipk
+Size: 3636
+SHA256sum: 7c9a3fd74aef0fcc54a2d83515012b02b513ad785c0bda20cef1ac0f7efede96
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains the ipsec utility.
+
+Package: strongswan-minimal
+Version: 5.6.3-2
+Depends: libc, strongswan, strongswan-charon, strongswan-mod-aes, strongswan-mod-gmp, strongswan-mod-hmac, strongswan-mod-kernel-netlink, strongswan-mod-nonce, strongswan-mod-pubkey, strongswan-mod-random, strongswan-mod-sha1, strongswan-mod-socket-default, strongswan-mod-stroke, strongswan-mod-updown, strongswan-mod-x509, strongswan-mod-xcbc
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 105
+Filename: strongswan-minimal_5.6.3-2_x86_64.ipk
+Size: 999
+SHA256sum: 8fc503c63054772d99c2fc2297d852f8f1490fda5a17db2b9ce6a0cc63383906
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This meta-package contains only dependencies for a minimal IKEv2 setup.
+
+Package: strongswan-mod-aes
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 15379
+Filename: strongswan-mod-aes_5.6.3-2_x86_64.ipk
+Size: 15560
+SHA256sum: a38c5b00203cc5a1a08fb4dc292d16cb37cc45217dc4d3a6c5358e62a5a9cda4
+Description:  StrongSwan AES crypto plugin
+
+Package: strongswan-mod-gmp
+Version: 5.6.3-2
+Depends: libc, strongswan, libgmp
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 12592
+Filename: strongswan-mod-gmp_5.6.3-2_x86_64.ipk
+Size: 13314
+SHA256sum: 0d450d3c106129cb3e8276c092104338041ccc8cb72a45114c7a5dd032f5bd04
+Description:  StrongSwan libgmp plugin
+
+Package: strongswan-mod-hmac
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2499
+Filename: strongswan-mod-hmac_5.6.3-2_x86_64.ipk
+Size: 3242
+SHA256sum: 02b38684e1c3b0ca4bf69a135aed33f8e7c21c1b5bc68324e19078c19dc283eb
+Description:  StrongSwan HMAC crypto plugin
+
+Package: strongswan-mod-kernel-netlink
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 34121
+Filename: strongswan-mod-kernel-netlink_5.6.3-2_x86_64.ipk
+Size: 34895
+SHA256sum: ef9afa32b0f05b182db12e3e4d5e51f054c1953e347bcb7bf89d3c2c59da6420
+Description:  StrongSwan netlink kernel interface plugin
+
+Package: strongswan-mod-nonce
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 1630
+Filename: strongswan-mod-nonce_5.6.3-2_x86_64.ipk
+Size: 2363
+SHA256sum: 504287bd09a1d26396a33d9fcfc98f31ca419e742171651065ace50e43b22f58
+Description:  StrongSwan nonce genereation plugin
+
+Package: strongswan-mod-pubkey
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2753
+Filename: strongswan-mod-pubkey_5.6.3-2_x86_64.ipk
+Size: 3505
+SHA256sum: 6429e0cc06d21c95aedbfb46430768013ab0a49b4b8443d1df3dd0526eff8ed6
+Description:  StrongSwan raw public key plugin
+
+Package: strongswan-mod-random
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2541
+Filename: strongswan-mod-random_5.6.3-2_x86_64.ipk
+Size: 3268
+SHA256sum: 5f7488bd306a2d06a6423f2b9948d904cc0be5c69caef0be20175423d469f101
+Description:  StrongSwan RNG plugin
+
+Package: strongswan-mod-sha1
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 5615
+Filename: strongswan-mod-sha1_5.6.3-2_x86_64.ipk
+Size: 6335
+SHA256sum: 4b7593446a59bd1f80228450ad761a81df961d707c93d32faab8f54aef58d16a
+Description:  StrongSwan SHA1 crypto plugin
+
+Package: strongswan-mod-socket-default
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 5384
+Filename: strongswan-mod-socket-default_5.6.3-2_x86_64.ipk
+Size: 6133
+SHA256sum: 1dbd79f1a51ec77c769e242a98044d255cdea9722de36c9bb875f5f00bed4820
+Description:  StrongSwan default socket implementation for charon plugin
+
+Package: strongswan-mod-stroke
+Version: 5.6.3-2
+Depends: libc, strongswan, strongswan-charon, strongswan-ipsec
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 66766
+Filename: strongswan-mod-stroke_5.6.3-2_x86_64.ipk
+Size: 67564
+SHA256sum: 2d4bcc227c6281e8ba33cf47bd5d9ab3cfdfa10a177e7ed61b00262cecd56d11
+Description:  StrongSwan Stroke plugin
+
+Package: strongswan-mod-updown
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 8941
+Filename: strongswan-mod-updown_5.6.3-2_x86_64.ipk
+Size: 9689
+SHA256sum: d173a79963c98f42ca83da47f5f7c26c6632fb9d334d1ad4e7f9a1b53390aa65
+Description:  StrongSwan updown firewall plugin
+
+Package: strongswan-mod-x509
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 30441
+Filename: strongswan-mod-x509_5.6.3-2_x86_64.ipk
+Size: 31149
+SHA256sum: 92cf7914f7416ecde3396283b2b1d7b41e5171ffa0342b0276efbad8e2eb0299
+Description:  StrongSwan x509 certificate plugin
+
+Package: strongswan-mod-xauth-generic
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 2951
+Filename: strongswan-mod-xauth-generic_5.6.3-2_x86_64.ipk
+Size: 3712
+SHA256sum: 0ee539c68dd739b7f0902fb7eff8ac7905542f545309af010b90f7cb56967748
+Description:  StrongSwan generic XAuth backend plugin
+
+Package: strongswan-mod-xcbc
+Version: 5.6.3-2
+Depends: libc, strongswan
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 3052
+Filename: strongswan-mod-xcbc_5.6.3-2_x86_64.ipk
+Size: 3799
+SHA256sum: 730f3b27d9f3436dae468dd56ee61394f5dc9eb480510a3759be96e41b448d40
+Description:  StrongSwan xcbc crypto plugin
+
+Package: strongswan
+Version: 5.6.3-2
+Depends: libc, libpthread, ip, kmod-crypto-authenc, kmod-ipsec, kmod-ipsec4, kmod-ipsec6, kmod-ipt-ipsec, iptables-mod-ipsec
+License: GPL-2.0+
+Section: net
+Architecture: x86_64
+Installed-Size: 162149
+Filename: strongswan_5.6.3-2_x86_64.ipk
+Size: 162788
+SHA256sum: 7b1b5c31449786d3f19846fd93c4de25ee8608f63861f8ae54696ce58b0f306b
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
+ This package contains shared libraries and scripts.
+
+Package: tini
+Version: 0.18.0-1
+Depends: libc
+License: MIT
+Section: utils
+Architecture: x86_64
+Installed-Size: 28888
+Filename: tini_0.18.0-1_x86_64.ipk
+Size: 29559
+SHA256sum: c05dc45d4ed4f13b05a77aa6a17ff0c966f96cceacae2277e4654cc1dae6252a
+Description:  A tiny but valid init process for containers.
+
+Package: tinyproxy
+Version: 1.8.3-2
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 31991
+Filename: tinyproxy_1.8.3-2_x86_64.ipk
+Size: 32813
+SHA256sum: 839cc7f9c533f78724db5dab354433c07d6ab363468ce1ad4be14a1c23ff29b6
+Description:  Tinyproxy is a lightweight HTTP and HTTPS proxy
+
+Package: transmission-daemon-openssl
+Version: 2.94-8
+Depends: libc, libcurl4, libevent2-7, libminiupnpc, libnatpmp, libpthread, librt, zlib, libopenssl1.1
+License: GPL-2.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 191385
+Filename: transmission-daemon-openssl_2.94-8_x86_64.ipk
+Size: 192421
+SHA256sum: cfa395ec11304b43a448682db3911b0c696d26e6ddeac9db0e4591f035d8456e
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+
+Package: transmission-web-control
+Version: 2019-07-24-c27e3ba9-1
+Depends: libc, transmission-daemon-openssl
+Conflicts: transmission-web
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 1072383
+Filename: transmission-web-control_2019-07-24-c27e3ba9-1_all.ipk
+Size: 1073285
+SHA256sum: 55aa6c7a371726ffcf6d369b0da5ad5ddb438bbe5f7a4a81433d14231207435d
+Description:  Transmission Web Control is a custom Web UI for Transmission.
+
+Package: travelmate
+Version: 1.2.2-1
+Depends: libc, iwinfo, jshn, jsonfilter, uclient-fetch
+License: GPL-3.0+
+Section: net
+Architecture: all
+Installed-Size: 5000
+Filename: travelmate_1.2.2-1_all.ipk
+Size: 5843
+SHA256sum: 155e2086df498d14ad8a01be2aa5361372c92a5b635b281ab58338ca0c1463f7
+Description:  A wlan connection manager for travel router.
+ Please see https://github.com/openwrt/packages/blob/master/net/travelmate/files/README.md for further information.
+ 
+
+Package: ttyd
+Version: 1.4.0-1
+Depends: libc, libopenssl1.1, libjson-c, libpthread, libwebsockets-full
+License: MIT
+Section: utils
+Architecture: x86_64
+Installed-Size: 161517
+Filename: ttyd_1.4.0-1_x86_64.ipk
+Size: 162361
+SHA256sum: 483d1619ff5593fc658d50ffaf7669ced933fd9c6a7dc4044e23524b39264994
+Description:  ttyd is a command-line tool for sharing terminal over the web.
+
+Package: udpxy
+Version: 2016-09-18-53e4672a7522311c40e9f6110ff256041c52c8b4-1
+Depends: libc
+License: GPL-3.0
+Section: net
+Architecture: x86_64
+Installed-Size: 32764
+Filename: udpxy_2016-09-18-53e4672a7522311c40e9f6110ff256041c52c8b4-1_x86_64.ipk
+Size: 33881
+SHA256sum: 696f8968f322b123d741cdcab4229050e2a36f4ec9c596ac7b2c4e271aabf2cf
+Description:  udproxy makes it possible to convert UDP IPTV streams into HTTP
+ streams which can be viewed even over WLANs. HTTP streams do
+ not generate huge amounts of multicast traffic, so a sd stream
+ only takes about 300k. Interesting for peoply who have IPTV at
+ home and do not want to rent multiple decoders from their
+ provider but just use their own streaming client (for example
+ popcornhour/mediatomb/vlc).
+
+Package: unbound-daemon
+Version: 1.9.5-1
+Depends: libc, libopenssl1.1, libunbound
+License: BSD-3-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 120805
+Filename: unbound-daemon_1.9.5-1_x86_64.ipk
+Size: 121315
+SHA256sum: 3d04be34747163b082dc90fd0c721a6d27984107c16383c7ec951f19a59a55e7
+Description:  This package contains the Unbound daemon with basic includes
+ necessary to meet the needs of UCI/LuCI configuration optoins.
+
+Package: unzip
+Version: 6.0-6
+Depends: libc
+License: BSD-4-Clause
+Section: utils
+Architecture: x86_64
+Installed-Size: 109535
+Filename: unzip_6.0-6_x86_64.ipk
+Size: 110553
+SHA256sum: 8155a9ac1aaefbf7b5d7b714133e6af56d11824d821d791024aeb13fb0e91be3
+Description:  InfoZIP's unzip program. With the exception of multi-volume archives
+ (ie, .ZIP files that are split across several disks using PKZIP's /& option),
+ this can handle any file produced either by PKZIP, or the corresponding
+ InfoZIP zip program.
+
+Package: vnstat
+Version: 1.18-1
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 74891
+Filename: vnstat_1.18-1_x86_64.ipk
+Size: 75921
+SHA256sum: b27396cb71094dd74a4082d105b556871a13e16fec46690e1a48bf45e328320c
+Description:  vnStat is a network traffic monitor for Linux that keeps a log of daily
+ network traffic for the selected interface(s). vnStat isn't a packet
+ sniffer. The traffic information is analyzed from the /proc -filesystem,
+ so vnStat can be used without root permissions.
+
+Package: vnstati
+Version: 1.18-1
+Depends: libc, vnstat, libgd
+Section: net
+Architecture: x86_64
+Installed-Size: 33154
+Filename: vnstati_1.18-1_x86_64.ipk
+Size: 34132
+SHA256sum: 7638012835c183e3375dcc634156093000d0ff47ee6460f84326e8cc5e0a9f27
+Description:  The purpose of vnstati is to provide image output support for statistics
+ collected using vnstat(1). However, the image file format is limited to
+ png. All basic outputs of vnStat are supported excluding live traffic
+ features. The image can be outputted either to a file or to standard
+ output.
+
+Package: vpnbypass
+Version: 1.3.1-1
+Depends: libc, ipset, iptables
+Conflicts: vpn-policy-routing
+License: GPL-3.0+
+Section: net
+Architecture: all
+Installed-Size: 2100
+Filename: vpnbypass_1.3.1-1_all.ipk
+Size: 3329
+SHA256sum: 98001bec5e7f3af426c65f6bc45a8bad34b85da489c7729c7c697c02aee486ea
+Description:  This service can be used to enable simple VPN split tunnelling.
+ Supports accessing domains, IP ranges outside of your VPN tunnel.
+ Also supports dedicating local ports/IP ranges for direct
+ internet access (outside of your VPN tunnel).
+ Please see the README for further information.
+
+Package: vpnc-scripts
+Version: 20151220-1
+Depends: libc
+Section: net
+Architecture: x86_64
+Installed-Size: 2280
+Filename: vpnc-scripts_20151220-1_x86_64.ipk
+Size: 3065
+SHA256sum: cb4b20c1bc2e257e12cc76dd33038278ba820afe2368fd987ec16afc5c3c1f84
+Description:  This package contains the vpnc-script which is used by vpnc
+ and OpenConnect to configure the tunnel interface.
+
+Package: vpnc
+Version: 0.5.3.r550-6
+Depends: libc, libgpg-error, libgcrypt, kmod-tun, libgnutls, vpnc-scripts, resolveip
+License: VARIOUS
+Section: net
+Architecture: x86_64
+Installed-Size: 55521
+Filename: vpnc_0.5.3.r550-6_x86_64.ipk
+Size: 56549
+SHA256sum: 7ab24163255cfac29ada5fa2ca17b98481aefeb4c04fbdb99c432ab7a367cb02
+Description:  A VPN client compatible with Cisco's EasyVPN equipment.
+ 
+ Supports IPSec (ESP) with Mode Configuration and Xauth.  Supports only
+ shared-secret IPSec authentication with Xauth, AES (256, 192, 128),
+ 3DES, 1DES, MD5, SHA1, DH1/2/5 and IP tunneling.
+
+Package: watchcat
+Version: 1-7
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: x86_64
+Installed-Size: 2169
+Filename: watchcat_1-7_x86_64.ipk
+Size: 2952
+SHA256sum: 1ffbf1db06332f8c9ac58574ff05f3ab90854464d2d0bbc0294288374b875e05
+Description:  Allows to configure a periodically reboot, or after losing internet connectivity. Configured trough UCI /etc/config/system.
+
+Package: wget
+Version: 1.20.3-3
+Depends: libc, libpcre, zlib, libopenssl1.1, librt
+Provides: gnu-wget
+Alternatives: 300:/usr/bin/wget:/usr/bin/wget-ssl
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 214060
+Filename: wget_1.20.3-3_x86_64.ipk
+Size: 215182
+SHA256sum: 6bafc394c3ceb987b20134e2ecdffab59baf85450af2ca2daf1dcba483dd57a6
+Description:  Wget is a network utility to retrieve files from the Web using http
+ and ftp, the two most widely used Internet protocols. It works
+ non-interactively, so it will work in the background, after having
+ logged off. The program supports recursive retrieval of web-authoring
+ pages as well as ftp sites -- you can use wget to make mirrors of
+ archives and home pages or to travel the Web like a WWW robot.
+ This package is built with SSL support.
+
+Package: wifischedule
+Version: 1-2
+Depends: libc
+License: PRPL
+Section: net
+Architecture: all
+Installed-Size: 3098
+Filename: wifischedule_1-2_all.ipk
+Size: 3868
+SHA256sum: f6d59d470ddfeb6680a48819b6d75ebe86903b4062d290fcdaca9c3a811fd6cc
+Description:  Turns WiFi on and off according to a schedule defined in UCI.
+
+Package: zerotier
+Version: 1.4.6-1
+Depends: libc, libpthread, libstdcpp, kmod-tun, ip, libminiupnpc, libnatpmp
+License: GPL-3.0-or-later
+Section: net
+Architecture: x86_64
+Installed-Size: 444490
+Filename: zerotier_1.4.6-1_x86_64.ipk
+Size: 445286
+SHA256sum: 380164e594b864d9ea9bb4e58a6cdde4dedb6052e009d99743d0249fa81c5c99
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
+
+Package: zoneinfo-asia
+Version: 2018e-1
+Depends: libc
+License: Public Domain
+Section: utils
+Architecture: x86_64
+Installed-Size: 30243
+Filename: zoneinfo-asia_2018e-1_x86_64.ipk
+Size: 30626
+SHA256sum: ce36ec0393d8090ec25225ab52df506b827e29bc98933267b046dab259b8588f
+Description:  Zone Information (Asia)
+
