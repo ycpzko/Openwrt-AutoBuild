@@ -152,6 +152,5 @@ jobs:
         git commit -m "$DATE"
         git push --force --quiet https://$SUPER_TOKEN@github.com/hyird/Openwrt-AutoBuild.git  HEAD:${{matrix.target}}_targets
         rm -rf .git
-        
-    - name: WeChat notification
-      run: curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=${{matrix.target}}编译完成
+
+
